@@ -1,0 +1,103 @@
+.body {
+    background-color: #14385C !important;
+}
+
+.faixaDoLogo {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100vw;
+    background-color: white;
+}
+
+.logo-cursinho {
+    background-image: url('/img/logo.png');
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+}
+
+.tudo {
+    background-color: #14385C;
+    width: 100vw;
+}
+
+.primeiraTela {
+    width: 100vw;
+    height: 160vh;
+    padding-top: 20px;
+    /* background-image: url("../../assets/Triangulos@2xTransparente.png"); */
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
+}
+
+.ps h1 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.ps {
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botao {
+    background-color: #FD7C11;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration-color: #14385C;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: rgb(228, 107, 8);
+}
+
+
+@media (min-width: 768px) {
+
+    .ps {
+        font-size: 25px;
+    }
+
+    .primeiraTela {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .ps {
+        font-size: 30px;
+    }
+
+    .texto {
+        width: 40vw;
+    }
+}
