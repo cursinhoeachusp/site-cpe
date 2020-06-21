@@ -1,40 +1,187 @@
-.body {
-    background-color: #14385C !important;
+.corpo {
+    background-color: #14385C;
+    width: 100vw;
 }
+
+/* ------------- Header ------------- */
 
 .faixaDoLogo {
     display: flex;
     justify-content: center;
     height: 350px;
-    width: 100vw;
     background-color: white;
 }
 
 .logo-cursinho {
-    background-image: url('/img/logo.png');
-    width: 350px;
-    height: 350px;
+    background-image: url('../img/logo.PNG');
+    width: 300px;
+    height: 300px;
     background-size: cover;
 }
 
-.tudo {
-    background-color: #14385C;
-    width: 100vw;
+/* -------------------------------------- */
+
+
+/* ------------- Genéricos ------------- */
+.seção {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.primeiraTela {
-    width: 100vw;
-    height: 160vh;
-    padding-top: 20px;
-    /* background-image: url("../../assets/Triangulos@2xTransparente.png"); */
-    background-repeat: no-repeat;
-    background-position: 10% 80%;
+.texto {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px;
+
+    font-size: larger;
+    color: white;
 }
+
+/* -------------------------------------- */
+
+
+
+
+/* ------------- SVGS ------------- */
+
+.svg {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+
+
+#quemSomos {
+    background-image: url('../img/wfh_9.svg');
+    margin-top: 40px;
+}
+
+#vemComAGente {
+    background-image: url('../img/wfh_1.svg');
+}
+/* -------------------------------------- */
+
+
+
+
+
+/* ------------- PARCEIROS ------------- */
+
+#apoio {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+
+.parceiros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parceiro {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px 0px 10px 0px;
+}
+
+#anglo {
+    max-width: 180px;
+    max-height: 180px;
+}
+
+/* -------------------------------------- */
+
+
+.faleComAGente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.faleComAGente p {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+.quemSomos {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+/* ------------- Fale Conosco ------------- */
+
+.fineLine {
+    display: flex;
+    margin: auto;
+    background-color: white;
+    height: 1px;
+    width: 50vw;
+    margin: 100px auto 100px auto;
+}
+
+.logoBranco {
+    background-image: url('../img/logobranco.PNG');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ícone {
+    margin: 0px 10px 30px 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.faleComAGente p {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.final {
+    height: 30px;
+    width: 100vw;
+}
+/* ------------------------------------------ */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
 .ps h1 {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: white;
     padding-top: 30px;
+    border-bottom: solid 5px #FD7C11;
+    font-weight: bolder;
+    font-size: 25px;
 }
 
 .ps {
@@ -42,26 +189,23 @@
     justify-content: center;
 }
 
-.texto {
-    color: white;
-    margin: 0px auto;
-    margin-top: 50px;
-    width: 95vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+.subtitulo {
     text-align: center;
-    font-size: larger;
-    font-weight: bold;
+    color: white;
+    padding-top: 60px;
 }
 
+
+
+/* ------------- BOTÕES ------------- */
 .botoes {
     display: flex;
-    flex-direction: column;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .botao {
@@ -69,29 +213,67 @@
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    text-decoration-color: #14385C;
-    margin-top: 20px;
+    /* text-decoration-color: #14385C; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 150px;
+    color: white;
+}
+
+.manual {
+    width: 235px;
 }
 
 .botao:hover {
     cursor: pointer;
     background-color: rgb(228, 107, 8);
 }
+/* ---------------------------------- */
+
 
 
 @media (min-width: 768px) {
 
-    .ps {
-        font-size: 25px;
+
+    .parceiros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px 450px 0px 450px;
     }
 
-    .primeiraTela {
-        height: 70vh;
+    #recuo {
+        margin-top: 0px;
+    }
+
+    .seção {
+        flex-direction: row;
+    }
+
+    .ps {
+        font-size: 25px;
     }
 }
 
 @media (min-width: 1024px) {
+
+    .ps h1 {
+        font-size: 40px;
+    }
+
+    .apoio {
+        font-size: 40px;
+    }
+
+    .svg {
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+    }
 
     .ps {
         font-size: 30px;
@@ -99,5 +281,9 @@
 
     .texto {
         width: 40vw;
+    }
+
+    #quemSomos {
+        margin-top: 0px;
     }
 }
