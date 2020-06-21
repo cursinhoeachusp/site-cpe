@@ -8,22 +8,37 @@
 .faixaDoLogo {
     display: flex;
     justify-content: center;
-    height: 350px;
+    height: 200px;
     background-color: white;
 }
 
 .logo-cursinho {
     background-image: url('../img/logo.png');
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
 }
 
+/*
+    background-image: url('../img/alunos.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;*/
 /* -------------------------------------- */
 
 
 /* ------------- Genéricos ------------- */
+.fotoAlunos{
+    background-image: url('../img/alunos.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 350px;
+    border: solid 5px #14385C;
+}
+
 .seção {
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,6 +188,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin');
 
 .ps h1 {
     font-family: 'Open Sans', sans-serif;
@@ -185,6 +201,20 @@
 }
 
 .ps {
+    display: flex;
+    justify-content: center;
+}
+
+.h-foto h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.h-foto {
+    padding: 75px 0px;
     display: flex;
     justify-content: center;
 }
