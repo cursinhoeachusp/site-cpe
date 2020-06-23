@@ -33,76 +33,61 @@
     </div>
 
     <div class="ps">
-      <h1 id="ps">Vem Estudar Com A Gente!</h1>
+      <h1 id="ps">Vem Estudar Com A Gente! - PS 2020.2</h1>
     </div>
 
     <div class="seção">
-
-      <div class="svg" id="vemComAGente"></div>
-
       <div class="texto">
         <h3> <b>Cursinho Popular da EACH - USP</b> </h3>
+
         <p>
-          Estude no Cursinho com acompanhamento de qualidade sem pagar <b>nenhuma taxa ou mensalidade</b>.
-        </p>
-        <p>
-          O <b>Cursinho Popular da EACH - USP</b> está oferecendo xx vagas para a turma de meio de ano. 
+          O <b>Cursinho Popular da EACH - USP</b> está oferecendo 45 vagas para a turma de meio de ano. 
           Faça sua inscrição entre os dias <b>24 de junho e 05
           de julho de 2020</b>.
         </p>
 
-      </div>
-
-      
-    </div>
-
-    <div class="botoes">
-      
-      <div class="item">
-        <img src="./img/Ícones/Manuais e Inscrição/edital.png" alt="" class="icones">
-        <a href="">
-          <button class="botao"><b>Leia o Edital</b></button>
-        </a>
-      </div>
-
-      <div class="item">
-        <img src="./img/Ícones/Manuais e Inscrição/inscrição.png" alt="" class="icones">
-        <a href="">
-          <button class="botao"><b>Inscreva-se</b></button>
-        </a>
-      </div>
-
-      <div class="item">
-        <img src="./img/Ícones/Manuais e Inscrição/manual.png" alt="" class="icones">
-        <a href="">
-          <button class="botao manual"><b>Manual do Candidato</b></button>
-        </a>
-      </div>
-    </div>
-    
-    <div class="seção quemSomos" id="recuo">
-
-      <div class="texto">
-        <h3> <b>Quem Somos</b> </h3>
         <p>
-          Juntos transformamos sonhos em realidade! O Cursinho Popular EACH-USP é 
-          formado universitários voluntários que acreditam no poder transformador 
-          da educação, por meio de uma educação crítica, gratuita e de qualidade.
+          Contagem regressiva para o <b>Processo Seletivo de Meio de Ano</b>.
         </p>
-      </div>
 
-      <div class="svg" id="quemSomos"></div>
-    </div>
+        <p id = "count"> </p>
 
-    <h3 id="apoio"><b>Quem Apoia Nossa Causa</b></h3>
-    <div class="parceiros">
-      <img src="./img/Parceiros/anglo.png" alt="" class="parceiro" id="anglo">
-      <img src="./img/Parceiros/each-branco-ok.png" alt="" class="parceiro">
-      <img src="./img/Parceiros/1_eE-xCk5njQuZxijVIo-zMg@2x.png" alt="" class="parceiro">
-      <div class="doisUltimos">
-        <img src="./img/Parceiros/letrus-squarelogo-1588077623326-removebg-preview.png" alt="" class="parceiro" id="letrus">
-        <img src="./img/Parceiros/01-Desc-Marca-Principal.png" alt="" class="parceiro">
+        
+        <p style="margin-top:25px;"> <b>Siga a gente nas nossas redes sociais pra acompanhar tudo do CPE</b> </p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 24, 2020 19:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("count").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("count").innerHTML = "Inscrições Abertas";
+          }
+        }, 1000);
+        </script>
+
       </div>
+      
     </div>
 
     <div class="fineLine"></div>
