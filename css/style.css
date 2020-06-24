@@ -9,14 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 270px;
+    height: 170px;
     background-color: white;
 }
 
 .logo-cursinho {
     background-image: url('../img/logo.png');
-    width: 300px;
-    height: 300px;
+    width: 170px;
+    height: 170px;
     background-size: cover;
 }
 
@@ -354,7 +354,7 @@
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
-    height: 350px;
+    height: 550px;
     width: 100vw;
 }
 
