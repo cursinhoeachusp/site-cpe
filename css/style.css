@@ -55,14 +55,21 @@
     background-size: cover;
 }
 
-
-#quemSomos {
+#comoFunc {
     background-image: url('../img/wfh_9.svg');
     margin-top: 40px;
 }
 
 #vemComAGente {
     background-image: url('../img/wfh_1.svg');
+}
+
+#quemSomos
+{
+    background-image: url('../img/atena-cpe-branca.png');
+    margin-top: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 /* -------------------------------------- */
 
@@ -127,9 +134,6 @@
     color: white;
     font-weight: bold;
 }
-
-
-
 
 .quemSomos {
     display: flex;
@@ -291,7 +295,7 @@
     }
 
     #recuo {
-        margin-top: 0px;
+        margin-top: 60px;
     }
 
     .seção {
@@ -352,6 +356,12 @@
     background-repeat: no-repeat;
     height: 350px;
     width: 100vw;
+}
+
+.listaFunciona {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width: 1024px) {
