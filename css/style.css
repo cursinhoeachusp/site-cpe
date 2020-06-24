@@ -70,6 +70,7 @@
     margin-top: 40px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 /* -------------------------------------- */
 
@@ -135,9 +136,14 @@
     font-weight: bold;
 }
 
-.quemSomos {
+.comoFunc {
     display: flex;
     flex-direction: column-reverse;
+}
+
+.quemSomos {
+    display: flex;
+    flex-direction: column;
 }
 
 
