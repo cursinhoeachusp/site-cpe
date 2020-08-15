@@ -19,4 +19,3 @@ function progress() {
 	}
 }
 
-progress();
