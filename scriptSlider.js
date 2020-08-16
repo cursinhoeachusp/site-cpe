@@ -6,6 +6,7 @@
           var tempoTroca;
           var vtempo;
           var vbarra;
+          var slideIndex;
 
           function preCarregamento(){
             var s=1;
@@ -18,6 +19,7 @@
 
            function carregarImg(img){
             slider.style.backgroundImage="url('"+imgs[img].src+"')";
+              
            }
 
            function inicia(){
@@ -39,11 +41,8 @@
              if(imgAtual>maxImg){
                imgAtual=0;
              } else if(imgAtual<0){
-
                imgAtual=maxImg;
              }
-
-
              carregarImg(imgAtual);
            } 
 
@@ -60,29 +59,59 @@
               window.requestAnimationFrame(anima);
            }
 
-          function plusDivs(n) {
-            showDivs(slideIndex += dir);
-            }
+           function showDivs(n) {
+            
+            var texto1 = document.getElementsByClassName("s1");
+            var texto2 = document.getElementsByClassName("s2");
+            var texto3 = document.getElementsByClassName("s3");
+            var texto4 = document.getElementsByClassName("s4");
+            var texto5 = document.getElementsByClassName("s5");
+            var texto6 = document.getElementsByClassName("s6");
+            var texto7 = document.getElementsByClassName("s7");
 
-           function showDivs(dir) {
+              if(imgAtual == imgs[0]) {
 
-            var slideIndex = 1;
-            showDivs(slideIndex);
+                texto1.style.display = "block";
 
-              var x = document.getElementById("dvslider");
+              }
 
-              if (dir > x.length) slideIndex = 1;
-              if (dir < 1) slideIndex = x.length;
+              if(imgAtual == 2) {
 
-              for (var i = 0, len = x.length; i < len; i++) {
+                texto1.style.display = "block";
 
-              x[i].style.display = "none";
-              document.getElementsByClassName("s" + (i + 1))[0].style.display = "none";
+              }
 
-    }
+              if(imgAtual == 3) {
 
-              x[slideIndex-1].style.display = "block";
-              document.getElementsByClassName("s" + slideIndex)[0].style.display = "block";
-}
+                texto1.style.display = "block";
 
-           window.addEventListener("load",inicia);
+              }
+
+              if(imgAtual == 4) {
+
+                texto1.style.display = "block";
+
+              }
+
+              if(imgAtual == 5) {
+
+                texto1.style.display = "block";
+
+              }
+
+              if(imgAtual == 6) {
+
+                texto1.style.display = "block";
+
+              }
+
+              if(imgAtual == 7) {
+
+                texto1.style.display = "block";
+
+              }
+          
+        }
+
+           
+        window.addEventListener("load",inicia);

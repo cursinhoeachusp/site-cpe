@@ -41,7 +41,6 @@
     width: 110px;
     color: #14385C;
     flex-direction: row;
-    outline: none;
 }
 
 .manualHeader {
@@ -51,7 +50,6 @@
 .botaoHeader:hover {
     cursor: pointer;
     background-color: #F2F2F2;
-    outline: none;
 }
 
 /* -------------------------------------- */
@@ -370,7 +368,6 @@
     width: 300px;
     height: 80px;
     color: white;
-    outline: none;
 }
 
 .botoes .icones {
@@ -394,19 +391,16 @@
 .botaoA:hover {
     cursor: pointer;
     background-color: #2761A7;
-    outline: none;
 }
 
 .botaoL:hover {
     cursor: pointer;
     background-color: rgb(228, 107, 8);
-    outline: none;
 }
 
 .botaoDoeAgora:hover {
     cursor: pointer;
     background-color: rgb(228, 107, 8);
-    outline: none;
 }
 
 
@@ -628,38 +622,6 @@
         height: 20px;
         border-radius: 10px;
         background-color: #FD7C11;
+
     }
 
-    #dvslider{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat;
-        height: 700px;
-        width: 100vw;
-    }
-
-    .btSlider{
-        background-color: rgba(20,56,92,0.4);
-        height: 30%;
-        color: #fff;
-        cursor: pointer;
-        outline: none; /* some com a borda quando clicar no botão */
-        margin: 10px;
-        border: none;
-    }
-
-    #dvload{
-        width: 95%;
-        height: 5px;
-        margin-top: 25%;
-        border: 1px solid rgba(255,255,255,0.3);
-    }
-
-    #dvbarra{
-        width: 0%;
-        height: 100%;
-        background-color: #fff;
-    }
