@@ -14,39 +14,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header class="nav">
-  <nav><div class="logo-cursinho"></div>
-      <ul>
-          <li><a href="#tela1">Tela 1</a></li>
-          <li><a href="#tela2">Tela 2</a></li>
-          <li><a href="#tela3">Tela 3</a></li>
-          <li><a href="#tela4">Tela 4</a></li>
-          <li><a href="#tela5">Tela 5</a></li>
-          <li><a href="#tela6">Tela 6</a></li>
-          <li><a href="#tela7">Tela 7</a></li>
-      </ul>
-    
-  </nav>
+<header>
+  <div class="faixaDoLogo">
+    <div class="row">
+      <div class="logo-cursinho"></div>
+    </div>
+  </div>
 </header>
 
 <body>
 
   <div class="corpo">
 
-        <a id="tela1"></a>
-        <a id="tela2"></a>
-        <a id="tela3"></a>
-        <a id="tela4"></a>
-        <a id="tela5"></a>
-        <a id="tela6"></a>
-        <a id="tela7"></a>
+    <input type="radio" class="slide-controller" name="slide" checked/>
+    <input type="radio" class="slide-controller" name="slide" />
+    <input type="radio" class="slide-controller" name="slide" />
+    <input type="radio" class="slide-controller" name="slide" />
+    <input type="radio" class="slide-controller" name="slide" />
+    <input type="radio" class="slide-controller" name="slide" />
+    <input type="radio" class="slide-controller" name="slide" />
 
-
-    <section id="main">
-
-        <article class="panel" id="tela1">
+    <div class="slide-show">
+       <ul class="slides-list">
+         <li class="slide">
           <div class="s1">
-            <div class="texto"><h3> O Cursinho Popular EACH busca fornecer gratuitamente maiores chances de ingresso no ensino universitário e apoio a estudantes de baixa renda, para que eles tenham maiores chances de transformar em realidade seus maiores sonhos.</h3>
+            <div class="texto">
+              <h1>Campanha de Doação do Cursinho Popular EACH - USP</h1><p> O <b>Cursinho Popular EACH</b> busca fornecer gratuitamente maiores chances de ingresso no ensino universitário e apoio a estudantes de baixa renda, para que eles tenham maiores chances de transformar em realidade seus maiores sonhos.</p>
+              <h3>Entenda como sua ajuda é importante!</h3>
               <div class="botoes" id="recuo">
                 <div class="item">
                   <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
@@ -57,9 +51,8 @@
             </div>
             
             </div>
-        </article>
-
-        <article class="panel" id="tela2">
+         </li>
+         <li class="slide">
           <div class="s2">
             <div class="texto"><h3>Quem são os alunos do Cursinho Popular EACH USP?</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu mauris a turpis tempor semper. Mauris consequat erat id orci sollicitudin feugiat. Cras ex urna, congue sit amet viverra in, vestibulum non arcu. Pellentesque pharetra diam ut nisl pretium posuere. Mauris consectetur nisl erat, eu tincidunt sapien lacinia congue. Donec tempor placerat libero, vel sollicitudin magna volutpat eu. Vivamus hendrerit imperdiet urna et suscipit. Maecenas rhoncus consectetur iaculis.</p>
@@ -71,46 +64,42 @@
                 </div>
               </div>
             </div>
-            
             </div>
-        </article>
-
-        <article class="panel" id="tela3">
+        </li>
+        <li class="slide">
           <div class="s3">
-              <div class="texto">
-                <h3 id="ps"> Por que estamos pedindo a sua doação?</h3>
-                  <p>Toda a equipe docente e administrativa do Cursinho Popular EACH USP é formada por voluntários, e todo o material de apoio utilizado na ministração de aulas e ofertado aos alunos é fruto de parceria. Além disso, não são realizadas cobranças de nenhuma taxa de inscrição, matrícula ou mensalidade aos alunos, toda a renda arrecadada proveniente de vendas, <b>sobretudo a de bottons (R$3,00 a unidade)</b> e de doações, e é por isso que sua ajuda é indispensável para nós!</p>
-                  <div class="botoes" id="recuo">
-                    <div class="item">
-                      <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
-                        <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
-                      </a>
-                    </div>
-              </div>
+            <div class="texto">
+              <h3 id="ps"> Por que estamos pedindo a sua doação?</h3>
+                <p>Toda a equipe docente e administrativa do Cursinho Popular EACH USP é formada por voluntários, e todo o material de apoio utilizado na ministração de aulas e ofertado aos alunos é fruto de parceria. Além disso, não são realizadas cobranças de nenhuma taxa de inscrição, matrícula ou mensalidade aos alunos, toda a renda arrecadada proveniente de vendas, <b>sobretudo a de bottons (R$3,00 a unidade)</b> e de doações, e é por isso que sua ajuda é indispensável para nós!</p>
+                <div class="botoes" id="recuo">
+                  <div class="item">
+                    <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
+                      <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
+                    </a>
+                  </div>
             </div>
-                
           </div>
-        </article>
-
-        <article class="panel" id="tela4">
+              
+        </div>
+        </li>
+        <li class="slide">
           <div class="s4">
-              <div class="texto">
-                <h3 id="ps">O que o Cursinho Popular EACH está fazendo para ajudar os alunos a ingressarem no ensino superior?</h3>
-                  <p>Durante o período de isolamento social as aulas estão acontecendo ao vivo online, de segunda à sexta nos períodos vespertino (14h - 18:45) e noturno (19h - 22:45), via Google Meet, e em um ambiente virtual, o Moodle, cheio de conteúdos para melhor preparo dos alunos. Além disso, nosso estudantes contam com o apoio do material Semi Extensino Drummond do Anglo; 2 redações corrigidas por mês; simulados de diagnóstico do material oferecido; e simulados individuais para divrsos vestibulares nacionais.</p>
-                  <div class="botoes" id="recuo">
-                    <div class="item">
-                      <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
-                        <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
-                      </a>
-                    </div>
-              </div>
+            <div class="texto">
+              <h3 id="ps">O que o Cursinho Popular EACH está fazendo para ajudar os alunos a ingressarem no ensino superior?</h3>
+                <p>Durante o período de isolamento social as aulas estão acontecendo ao vivo online, de segunda à sexta nos períodos vespertino (14h - 18:45) e noturno (19h - 22:45), via Google Meet, e em um ambiente virtual, o Moodle, cheio de conteúdos para melhor preparo dos alunos. Além disso, nosso estudantes contam com o apoio do material Semi Extensino Drummond do Anglo; 2 redações corrigidas por mês; simulados de diagnóstico do material oferecido; e simulados individuais para divrsos vestibulares nacionais.</p>
+                <div class="botoes" id="recuo">
+                  <div class="item">
+                    <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
+                      <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
+                    </a>
+                  </div>
             </div>
-                
           </div>
-      </article>
-
-      <article class="panel" id="tela5">
-        <div class="s5">
+              
+        </div>
+        </li>
+        <li class="slide">
+          <div class="s5">
             <div class="texto">
               <h3 id="ps">Para onde vão os fundos arrecadados?</h3>
                 <p>Nós auxiliamos os alunos que necessitam através do pagamento das taxas de inscrição dos vestibulares, e, especialmente nesse período, da disponibilização de verbas para manutenção ou compra de equipamento eletrônicos para que os alunos incapacitados possam acessar as aulas. Os demais gastos se relacionam ao pagamento de impostos, projetos e eventos desenvolvidos em apoio aos alunos, como a Feira do Livro, pagamento dos cursos de produção dos bottons e outras atividades formais.</p>
@@ -124,89 +113,84 @@
           </div>
               
         </div>
-    </article>
-
-    <article class="panel" id="tela6">
-      <div class="s6">
-      <div class="texto"><h3 id="ps">Mas o que eu tenho a ver com cursinhos populares?</h3>
-        <p>Tudo a ver! Fazendo sua doação você incentiva o ingresso dos nossos mais de cem alunos ao ensino superior, além de apoiar os que ainda ingressarão no projeto nos próximos anos, dando uma chance de um futuro melhor a eles.</p>
-        <div class="botoes" id="recuo">
-          <div class="item">
-            <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
-              <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
-            </a>
+        </li>
+        <li class="slide">
+          <div class="s6">
+            <div class="texto"><h3 id="ps">Mas o que eu tenho a ver com cursinhos populares?</h3>
+              <p>Tudo a ver! Fazendo sua doação você incentiva o ingresso dos nossos mais de cem alunos ao ensino superior, além de apoiar os que ainda ingressarão no projeto nos próximos anos, dando uma chance de um futuro melhor a eles.</p>
+              <div class="botoes" id="recuo">
+                <div class="item">
+                  <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
+                    <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
           </div>
-        </div>
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="panel" id="tela7">
-    <div class="s7">
-    <div class="seção">
-      <div class="texto">
-        <h2>APOIE O INGRESSO À UNIVERSIDADE!
-          Doe agora e/ou compartilhe a campanha nas redes sociais
-        </h2>
-        <h3> Valor arrecadado: </h3>
-  <div id="percentCount" class="percentet-count">R$XXX,XX</div>
-        <div class="progress-bar">
-          <div class="progress" id="progress"></div>
-        </div>
-        <div class="botoes" id="recuo">
-          <div class="item">
-            <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
-              <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
-            </a>
+        </li>
+        <li class="slide">
+          <div class="s7">
+            <div class="seção">
+              <div class="texto">
+                <h2>APOIE O INGRESSO À UNIVERSIDADE!</h2>
+                  <h3>Doe agora e/ou compartilhe a campanha nas redes sociais
+                  </h3>
+                <h3> Valor arrecadado até o momento: </h3>
+                  <div id="percentCount" class="percentet-count">R$XXX,XX</div>
+                <div class="progress-bar">
+                  <div class="progress" id="progress"></div>
+                </div>
+                <div class="botoes" id="recuo">
+                  <div class="item">
+                    <a href="https://cursinhopopularpro.wixsite.com/cursinho/nossa-equipe" target="_blank">
+                      <button class="botaoDoeAgora manual"><b>DOE AGORA</b></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </li>
+       </ul>
+      </div>
+  
+      <div class="faleComAGente">
+  
+        <div class="redesSociais">
+          <a href="https://br.linkedin.com/company/cursinho-popular-each-usp" target="_blank">
+            <img src="./img/Social Media/linkedin.png" alt="" class="ícone">
+          </a>
+          
+          <a href="https://www.facebook.com/CursinhoPopularEACH" target="_blank">
+            <img src="./img/Social Media/facebook.png" alt="" class="ícone">
+          </a>
+          
+          <a href="https://www.instagram.com/cursinhoeachusp/" target="_blank">
+            <img src="./img/Social Media/instagram-sketched.png" alt="" class="ícone">
+          </a>
+  
+          <a href="https://www.google.com.br/maps/dir//Cursinho+Popular+EACH+USP+-+Rua+Arlindo+B%C3%A9ttio,+1000+-+Jardim+Keralux,+S%C3%A3o+Paulo+-+SP/@-23.481952,-46.5034877,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94ce6014a2e7522b:0x1005b9d5e613a835!2m2!1d-46.501299!2d-23.4819569!3e0" target="_blank">
+            <img src="./img/Social Media/maps.png" alt="" class="ícone">
+          </a>
+  
+          <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+            <img src="./img/Social Media/mail.PNG" alt="" class="ícone">
+          </a>
+  
         </div>
-      </div>
-    </div>
-    
-      </div>
-  </article>
-
-  <footer class="footer">
-
-    <div class="faleComAGente">
-
-      <div class="redesSociais">
-        <a href="https://br.linkedin.com/company/cursinho-popular-each-usp" target="_blank">
-          <img src="./img/Social Media/linkedin.png" alt="" class="ícone">
-        </a>
+  
+        <p>EACH - USP Leste</p>
+        <p>-</p>
+        <p>Balcão do Cursinho</p>
+        <p>Sala 155 - I1</p>
+  
+        <div class="final"></div>
+  
         
-        <a href="https://www.facebook.com/CursinhoPopularEACH" target="_blank">
-          <img src="./img/Social Media/facebook.png" alt="" class="ícone">
-        </a>
-        
-        <a href="https://www.instagram.com/cursinhoeachusp/" target="_blank">
-          <img src="./img/Social Media/instagram-sketched.png" alt="" class="ícone">
-        </a>
-
-        <a href="https://www.google.com.br/maps/dir//Cursinho+Popular+EACH+USP+-+Rua+Arlindo+B%C3%A9ttio,+1000+-+Jardim+Keralux,+S%C3%A3o+Paulo+-+SP/@-23.481952,-46.5034877,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94ce6014a2e7522b:0x1005b9d5e613a835!2m2!1d-46.501299!2d-23.4819569!3e0" target="_blank">
-          <img src="./img/Social Media/maps.png" alt="" class="ícone">
-        </a>
-
-        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-          <img src="./img/Social Media/mail.PNG" alt="" class="ícone">
-        </a>
       </div>
-
-      <p>EACH - USP Leste</p>
-      <p>-</p>
-      <p>Balcão do Cursinho</p>
-      <p>Sala 155 - I1</p>
-
-      
-
-      <div class="final"></div>
-
-      
-    </div>
+      </div>
  
-  </footer>
-    </section>
 
 <!--
 <h3 id="apoio"><b>Quem Apoia Nossa Causa</b></h3>
