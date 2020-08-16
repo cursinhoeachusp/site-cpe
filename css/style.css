@@ -4,14 +4,6 @@
     width: 100vw;  
 }
 
-.triangulos{
-
-    background-image: url('../img/triangulos.png');
-    background-repeat: no-repeat;
-    background-size: 400px 400px;
-    background-position: -50px 540px;
-}
-
 /* ------------- Header ------------- */
 
 .faixaDoLogo {
@@ -24,23 +16,11 @@
 
 .logo-cursinho {
     background-image: url('../img/logo.png');
-    width: 150px;
-    height: 150px;
+    width: 80x;
+    height: 80px;
     background-size: cover;
-}
-
-.botaoHeader {
-    background-color: transparent;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 5px;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 110px;
-    color: #14385C;
-    flex-direction: row;
+    z-index: 10;
+    float: left;
 }
 
 .manualHeader {
@@ -50,6 +30,7 @@
 .botaoHeader:hover {
     cursor: pointer;
     background-color: #F2F2F2;
+    outline: none;
 }
 
 /* -------------------------------------- */
@@ -57,32 +38,6 @@
 
 /* ------------- Genéricos ------------- */
 
-.boldLine {
-    display: flex;
-    margin-top: auto;
-    background-color: #FD7C11;
-    height: 5px;
-    width: auto;
-    margin-bottom: 0px;
-}
-
-.fineLineLaranja {
-    display: flex;
-    margin: auto;
-    background-color: #FD7C11;
-    height: 1px;
-    width: 50vw;
-    margin: 85px auto 85px auto;
-}
-
-.fineLineFundo {
-    display: flex;
-    margin: auto;
-    background-color: #FD7C11;
-    height: 5px;
-    margin: 55px auto 55px auto;
-    margin-bottom: 0px;
-}
 
 .seção {
     display: flex;
@@ -99,17 +54,10 @@
     margin: 0px 20px;
     font-size: larger;
     color: white;
+    background-color: rgba(20, 56, 92, 0.5);
+    border-radius: 10px;
 }
 
-.tituloProjetos {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px 20px;
-    font-size: larger;
-    color: #FD7C11;
-}
 
 /* -------------------------------------- */
 
@@ -131,14 +79,6 @@
     background-image: url('../img/wfh_1.svg');
 }
 
-#atena_demonstrando {
-    background-image: url('../img/atena_demonstrando.png');
-    margin-top: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
 
 #quemSomos{
     background-image: url('../img/atena-cpe-branca.png');
@@ -319,28 +259,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    outline: none;
 }
 
-.botoesDoeAgora {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.botaoL {
-    background-color: #FD7C11;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 205px;
-    color: white;
-    flex-direction: row;
-}
 
 .botaoA {
     background-color: #427ABD;
@@ -354,6 +275,7 @@
     width: 205px;
     color: white;
     flex-direction: row;
+    outline: none;
 }
 
 .botaoDoeAgora {
@@ -368,12 +290,14 @@
     width: 300px;
     height: 80px;
     color: white;
+    outline: none;
 }
 
 .botoes .icones {
     width: 100px;
     height: 100px;
     margin-top: 25px;
+    outline: none;
 }
 
 .botoes .item {
@@ -382,25 +306,30 @@
     justify-content: center;
     align-items: center;
     margin: 0px 30px 0px 30px;
+    outline: none;
 }
 
 .manual {
     width: 205px;
+    outline: none;
 }
 
 .botaoA:hover {
     cursor: pointer;
     background-color: #2761A7;
+    outline: none;
 }
 
 .botaoL:hover {
     cursor: pointer;
     background-color: rgb(228, 107, 8);
+    outline: none;
 }
 
 .botaoDoeAgora:hover {
     cursor: pointer;
     background-color: rgb(228, 107, 8);
+    outline: none;
 }
 
 
@@ -510,80 +439,93 @@
         font-size: 25px;
     }
 
-    .fotoAlunos{
+    .s1{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('..//img/alunos.jpeg');
+        background-image: url('..//img/s1.jpg');
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        height: 550px;
+        height: 700px;
         width: 100vw;
     }
 
-    .fotoHorários{
+    .s2{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('..//img/horarios.jpg');
+        background-image: url('..//img/s2.jpg');
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        height: 350px;
+        height: 700px;
         width: 100vw;
-        margin-bottom: 10px;
+
     }
 
-    .fotoEquipe{
-        background-image: url('..//img/equipe.jpeg');
+    .s3{
+        background-image: url('..//img/s3.jpg');
         display: flex;
         justify-content: center;
         align-items: center;
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        height: 550px;
+        height: 700px;
         width: 100vw;
     }
 
-    .fotoAlunosP{
+    .s4{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('..//img/IMG_6208.jpg');
+        background-image: url('..//img/s4.jpg');
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        height: 350px;
+        height: 700px;
         width: 100vw;
-        margin-bottom: 10px;
+
     }
 
-    .fotoProjetos{
+    .s5{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('..//img/projetos.jpg');
+        background-image: url('..//img/s5.jpg');
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        height: 350px;
+        height: 700px;
         width: 100vw;
-        margin-bottom: 10px;
+
     }
 
-    .fotoDoacoes{
+    .s6{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('..//img/IMG_6215.jpg');
+        background-image: url('..//img/s6.jpg');
         background-size: cover;
         background-position: center; 
         background-repeat: no-repeat;
-        height: 350px;
+        height: 700px;
         width: 100vw;
-        margin-bottom: 10px;
+
+    }
+
+    .s7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('..//img/s7.jpg');
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 100vw;
+
     }
 
     .listaFunciona {
@@ -622,6 +564,150 @@
         height: 20px;
         border-radius: 10px;
         background-color: #FD7C11;
-
     }
+
+/*
+ *Styling
+ */
+
+html,body {
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+
+body {
+overflow: hidden;
+}
+
+header {
+background: #fff; 
+position: fixed; 
+left: 0; top: 0; 
+width:100%;
+height: 3.5rem;
+z-index: 10; 
+}
+
+nav {
+width: 100%;
+padding-top: 0.5rem;
+
+}
+
+nav ul {
+list-style: none;
+width: inherit; 
+margin: 0; 
+
+}
+
+
+ul li:nth-child( 7n + 1), #main .panel:nth-child( 7n + 1) {
+background: #14385C;
+}
+
+ul li:nth-child( 7n + 2), #main .panel:nth-child( 7n + 2) {
+background: #FD7C11;
+}
+
+ul li:nth-child( 7n + 3), #main .panel:nth-child( 7n + 3) {
+background: #14385C;
+}
+
+ul li:nth-child( 7n + 4), #main .panel:nth-child( 7n + 4) {
+background: #FD7C11;
+}
+
+ul li:nth-child( 7n + 5), #main .panel:nth-child( 7n + 5) {
+background: #14385C;
+}
+
+ul li:nth-child( 7n + 6), #main .panel:nth-child( 7n + 6) {
+background: #FD7C11;
+}
+
+ul li:nth-child( 7n + 7), #main .panel:nth-child( 7n + 7) {
+background: #14385C;
+}
+
+ul li {
+display: inline-block; 
+margin: 0 8px;
+margin: 0 0.5rem;
+padding: 5px 8px;
+padding: 0.3rem 0.5rem;
+border-radius: 50px; 
+line-height: 1.5;
+
+}
+
+ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.panel {
+width: flex;
+height: 700px;
+z-index:0; 
+-webkit-transform: translateZ( 0 );
+transform: translateZ( 0 );
+-webkit-transition: -webkit-transform 0.6s ease-in-out;
+transition: transform 0.6s ease-in-out;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+
+}
+
+
+/*
+*Scrolling
+*/
+
+a[ id= "tela1" ]:target ~ #main article.panel {
+-webkit-transform: translateY( 0px);
+transform: translateY( 0px );
+}
+
+a[ id= "tela2" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -700px );
+transform: translateY( -700px );
+}
+
+a[ id= "tela3" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -1400px );
+transform: translateY( -1400px );
+}
+
+a[ id= "tela4" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -2100px);
+transform: translateY( -2100px );
+}
+    
+a[ id= "tela5" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -2800px );
+transform: translateY( -2800px );
+}
+    
+a[ id= "tela6" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -3500px );
+transform: translateY( -3500px );
+}
+
+a[ id= "tela7" ]:target ~ #main article.panel {
+-webkit-transform: translateY( -4200px);
+transform: translateY( -4200px );
+}
+
+.textoDoacao {    
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px;
+    font-size: larger;
+    color: white;
+}
 
