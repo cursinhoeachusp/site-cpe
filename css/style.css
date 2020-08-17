@@ -123,9 +123,6 @@
 }
 
 /* ------------- Fale Conosco ------------- */
-/* ------------- Rodapé ------------------- */
-
-
 
 .redesSociais {
     display: flex;
@@ -193,11 +190,6 @@
     font-size: 30px;
 }
 
-.subtitulo {
-    text-align: center;
-    color: white;
-    padding-top: 60px;
-}
 
 /* ------------- BOTÕES ------------- */
 .botoes {
