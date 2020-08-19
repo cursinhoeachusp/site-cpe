@@ -1,64 +1,72 @@
+(function($){
 
-    var imgs=[];
-    var slider;
-    var imgAtual;
-    var maxImg;
-    var tmp;
-    var tempoTroca;
-    var vtempo;
-    var vbarra;
+	// DEFINE BACKGROUND DO SLIDE
+	(function($){
+		$('.slider_item').each(function(){
+			var sliderBg = $(this).data('slider-bg');
+			$(this).css({'background-image': 'url('+sliderBg+')'});
+		});
+	}(jQuery));
 
-    function preCarregamento(){
-       
-        var s=0;
-           
-        for(var i = 0; i < 7; i++){
-                
-                imgs[i]=new Image();
-                imgs[i].getElementsByClassName("slides-list");
-                s++;
-        }
-    }
 
-    function carregarImg(img){
-        slider.style.getElementsByClassName="s+[img]";
-    }
+	// AVANÇA PARA O PRÓXIMO SLIDE
+	var nextSlider = function(){
+		if($('.slider_item.active').next('.slider_item').size()){
 
-    function inicia(){
-        preCarregamento();
-        imgAtual=0;
-        maxImg=imgs.length-1;
-        slider = document.getElementsByClassName("slides-list");
-        vbarra=document.getElementById("dvbarra");
-        carregarImg(imgAtual);
-        tempoTroca = 0;
-        anima();
-    }
+			$('.slider_item.active').each(function(){
+				$(this).next('.slider_item').addClass('active');
+				$(this).removeClass('active');
+			});
 
-    function troca(dir){
-        tempoTroca=0;
-        imgAtual+=dir;
+		}else{
+			$('.slider_item.active').each(function(){
+				$('.slider_item').removeClass('active');
+				$('.slider_item:eq(0)').addClass('active');
+			});
+		}
+	}
+
+		// VOLTA PARA O SLIDE ANTERIOR
+		var prevSlider = function(){
+			if($('.slider_item.active').index() > 1){
+				$('.slider_item.active').each(function(){
+					$(this).prev('.slider_item').addClass('active');
+					$(this).removeClass('active');
+				});
+
+			}else{
+				$('.slider_item.active').each(function(){
+					$('.slider_item').removeClass('active');
+					$('.slider_item:last-of-type').addClass('active');
+				});
+			}
+		}
+
+		// INICIALIZAÇÃO AUTOMÁTICA DO SLIDE
+		var sliderAuto = setInterval(nextSlider, 6000);
+
+		$('.slider_content, .slider-next, .slider-prev').hover(function(){
+			clearInterval(sliderAuto);
+		},function(){
+			sliderAuto = setInterval(nextSlider, 6000);			
+		});
+
+		//AÇÕES DE AVANÇAR E VOLTAR SLIDE
+		$('.slider-next').click(function(event){
+			event.preventDefault();
+			nextSlider();
+		});
+
+		$('.slider-prev').click(function(event){
+			event.preventDefault();
+			prevSlider();
+        });
         
-        if(imgAtual>maxImg){
-            imgAtual=0;
         
-        }else if(imgAtual<0){
-            imgAtual=maxImg;
-        
-        }
-        
-        carregarImg(imgAtual);
-    }
 
-    function anima(){
-        tempoTroca++;
-            if(tempoTroca >= 600){
-                tempoTroca = 0;
-                troca(1);
-            }
-        vtempo=tempoTroca/6;
-        vbarra.style.width=vtempo+"%";
-        window.requestAnimationFrame(anima);
-    }
 
-    window.addEventListener("load",inicia);
+    }(jQuery))
+    
+   
+    
+    
