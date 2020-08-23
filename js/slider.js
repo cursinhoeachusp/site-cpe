@@ -42,15 +42,6 @@
 			}
 		}
 
-		// INICIALIZAÇÃO AUTOMÁTICA DO SLIDE
-		var sliderAuto = setInterval(nextSlider, 6000);
-
-		$('.slider_content, .slider-next, .slider-prev').hover(function(){
-			clearInterval(sliderAuto);
-		},function(){
-			sliderAuto = setInterval(nextSlider, 6000);			
-		});
-
 		//AÇÕES DE AVANÇAR E VOLTAR SLIDE
 		$('.slider-next').click(function(event){
 			event.preventDefault();
