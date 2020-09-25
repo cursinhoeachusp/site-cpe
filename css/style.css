@@ -27,38 +27,12 @@
 
 /* ------------- Genéricos ------------- */
 
-
 .seção {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.texto {    
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    font-size: larger;
-    color: white;
-    background-color: rgba(20, 56, 92, 0.8);
-    border-radius: 10px;
-}
-
-.textoBarra {    
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    font-size: larger;
-    color: white;
-    background-color: rgba(20, 56, 92, 0.8);
-    width: flex;
-    border-radius: 10px;
-}
-
-
 
 /* -------------------------------------- */
 .svg {
@@ -67,82 +41,7 @@
     background-size: cover;
 }
 
-#comoFunc {
-    background-image: url('../img/wfh_9.svg');
-    margin-top: 40px;
-}
-
-#vemComAGente {
-    background-image: url('../img/wfh_1.svg');
-}
-
-#quemSomos{
-    background-image: url('../img/atena-cpe-branca.png');
-    margin-top: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
 /* -------------------------------------- */
-
-.comoFunc {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.quemSomos {
-    display: flex;
-    flex-direction: column;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-
-.ps h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.titulo h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.titulo {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.titulo h3 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 5px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 30px;
-}
-
-.subtitulo {
-    text-align: center;
-    color: white;
-    padding-top: 60px;
-}
-
 
 /* ------------- BOTÕES ------------- */
 .botoes {
@@ -209,14 +108,6 @@
         width: 235px;
     }
 
-    .doisUltimos {
-        flex-direction: row;
-    }
-
-    #letrus {
-        margin-right: 40px;
-    }
-
     .botoes .icones {
         width: 150px;
         height: 150px;
@@ -224,15 +115,6 @@
 
     .botoes {
         flex-direction: row;
-    }
-
-    .parceiros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0px 500px 0px 500px;
     }
 
     #recuo {
@@ -243,25 +125,10 @@
         flex-direction: row;
     }
 
-    .ps {
-        font-size: 25px;
-    }
-    .ps h1 {
-        font-size: 40px;
-    }
-    
-    .apoio {
-        font-size: 40px;
-    }
-    
     .svg {
         width: 400px;
         height: 340px;
         background-size: cover;
-    }
-    
-    .ps {
-        font-size: 30px;
     }
     
     .texto {
@@ -272,40 +139,7 @@
         width: 40vw;
     }
     
-    #quemSomos {
-        margin-top: 0px;
-    }
 }
-
-    .h-foto h1 {
-        font-family: Ubuntu, sans-serif;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        font-weight: bolder;
-        font-size: 25px;
-    }
-
-    .h-foto {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .t-fotoE{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .t-fotoE h1 {
-        font-family: Ubuntu, sans-serif;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        font-weight: bolder;
-        font-size: 25px;
-    }
 
     .listaFunciona {
         list-style-type: none;
@@ -641,12 +475,15 @@
     justify-content: center;
     margin-top: 10px;
     text-align: center;
+    z-index:999;
+
 }
 
 .ícone {
     margin: 0px 10px 0px 10px;
     max-width: 40px;
     max-height: 40px;
+    z-index:999;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -656,6 +493,26 @@
     margin-bottom: 0px;
     font-weight: 30;
     letter-spacing: 3px;
+}
+
+.faleComAGente1 p {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 30;
+    letter-spacing: 3px;
+}
+
+.faleComAGente1 {
+    color: white;
+    font-weight: bold;
+}
+
+.faleComAGente1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
 }
 
 
