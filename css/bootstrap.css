@@ -17,5 +17,5 @@
 }
 
 .container{display: block; float: left; width: 100%;}
-.content{display: block; margin:0 auto; max-width: 1280px;}
+.content{display: block; margin:0 auto; max-width: 100%;}
 .hide{display:none;}
