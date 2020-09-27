@@ -349,9 +349,7 @@
   }
 
   .slider .slider_item{
-    display: block;
-    float: left;
-    width: 100%;
+    width: 100vw;
     height: 880px;
  }
 
