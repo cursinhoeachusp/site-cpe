@@ -17,9 +17,9 @@
 }
 
 .logo-cursinho{
-    background-image: url('../img/logobranco.PNG');
-    width: 150px;
-    height: 150px;
+    background-image: url('../img/logobranco.png');
+    width: 200px;
+    height: 200px;
     background-size: cover;
     margin-bottom: 50px;
 }
@@ -964,13 +964,6 @@
     height: 1px;
     width: 50vw;
     margin: 100px auto 100px auto;
-}
-
-.logoBranco {
-    background-image: url('../img/logobranco.PNG');
-    background-size: cover;
-    width: 200px;
-    height: 200px;
 }
 
 .redesSociais {
