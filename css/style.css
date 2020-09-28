@@ -1,25 +1,47 @@
-
-.corpo {
+.corpoAzul {
     background-color: #14385C;
     width: 100vw;  
+    height: flex;
 }
 
-/* ------------- Header ------------- */
-
-.faixaDoLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-color: #14385C;
+.corpoRosa {
+    background-color: #DC74A1;
+    width: 100vw; 
+    height: flex; 
 }
 
-.logoBranco {
-    background-image: url('../img/logobranco.png');
-    background-size: cover;
+.corpoLaranja {
+    background-color: #FD7C11;
+    width: 100vw; 
+    height: flex;
+}
+
+.logo-cursinho{
+    background-image: url('../img/logobranco.PNG');
     width: 150px;
     height: 150px;
-    float: left;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.MostraDeProfissoes{
+    background-image: url('../img/MostraDeProfissoes.png');
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+}
+
+.line {
+    display: flex;
+    margin: auto;
+    background-color: white;
+    height: 10px;
+    width: flex;  
+    margin-bottom: 30px;  
+}
+
+.final {
+    height: 100px;
 }
 
 /* -------------------------------------- */
@@ -27,6 +49,12 @@
 
 /* ------------- Genéricos ------------- */
 
+.seçãoRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .seção {
     display: flex;
@@ -35,146 +63,122 @@
     align-items: center;
 }
 
-.texto {    
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.textoNegrito{
+    font-family: Ubuntu, 'Open Sans', sans-serif;
     display: flex;
     text-align: center;
-    flex-direction: column;
     justify-content: center;
     font-size: larger;
     color: white;
-    background-color: rgba(20, 56, 92, 0.8);
-    border-radius: 10px;
+    font-style: bolder;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 40px;
 }
-
-.textoBarra {    
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    font-size: larger;
-    color: white;
-    background-color: rgba(20, 56, 92, 0.8);
-    width: flex;
-    border-radius: 10px;
-}
-
-
 
 /* -------------------------------------- */
+
+/* ------------- SVGS ------------- */
+
 .svg {
     width: 300px;
     height: 200px;
     background-size: cover;
 }
 
-#comoFunc {
-    background-image: url('../img/wfh_9.svg');
-    margin-top: 40px;
-}
-
-#vemComAGente {
-    background-image: url('../img/wfh_1.svg');
-}
-
-#quemSomos{
-    background-image: url('../img/atena-cpe-branca.png');
-    margin-top: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
-/* -------------------------------------- */
-
-.comoFunc {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.quemSomos {
-    display: flex;
-    flex-direction: column;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-
-.ps h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.titulo h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.titulo {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.titulo h3 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 5px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 30px;
-}
-
-.subtitulo {
-    text-align: center;
-    color: white;
-    padding-top: 60px;
-}
-
+/* ------------------------------------------ */
 
 /* ------------- BOTÕES ------------- */
+
 .botoes {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    outline: none;
-    z-index:999;
 }
 
-.botaoDoeAgora {
-    background-color: #FD7C11;
+
+.botaoLinkAzul {
+    background-color: #14385C;
+    border-color: #FD7C11;
+    color: #FD7C11;
+    font-family: Ubuntu, 'Open Sans', sans-serif;
     border: none;
-    border-radius: 15px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
     text-align: center;
-    font-size: 24px;
-    width: 300px;
-    height: 80px;
-    color: white;
-    outline: none;
-    z-index:999;
+    font-size: 17px;
+    width: 3px;
+    height: 27px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+
+}
+
+.botaoLinkLaranja {
+    background-color: #FD7C11;
+    border-color: #14385C;
+    color: #14385C;
+    font-family: Ubuntu, 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+
+    text-align: center;
+    font-size: 17px;
+    width: 3px;
+    height: 27px;
+    font-weight: lighter;
+
+
+    margin-bottom: 30px;
+}
+
+.botaoLinkAzulDossie {
+    background-color: #14385C;
+    border-color: #FD7C11;
+    color: #FD7C11;
+    font-family: Ubuntu, 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 17px;
+    width: 3px;
+    height: 27px;
+    font-weight: lighter;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.botaoLinkLaranjaDossie {
+    background-color: #FD7C11;
+    border-color: #14385C;
+    color: #14385C;
+    font-family: Ubuntu, 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 17px;
+    width: 3px;
+    height: 27px;
+    font-weight: lighter;
+    background-position-x: left;
 }
 
 .botoes .icones {
     width: 100px;
-    height: 100px;
-    margin-top: 0px;
-    outline: none;
-    z-index:999;
 }
 
 .botoes .item {
@@ -182,39 +186,49 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px 30px 0px 30px;
-    outline: none;
-    z-index:999;
+
 }
 
 .manual {
-    width: 205px;
-    outline: none;
-    z-index:999;
+    width: 400px;
 }
 
-.botaoDoeAgora:hover {
+.manualLink{
+    width: 100px;
+    height: flex;
+    flex-direction: center;
+}
+
+.botaoLinkAzul:hover {
     cursor: pointer;
-    background-color: rgb(228, 107, 8);
-    outline: none;
-    z-index:999;
+    background-color: rgb(12, 37, 62);
 }
 
+.botaoLinkAzulDossie:hover {
+    cursor: pointer;
+    background-color: rgb(12, 37, 62);
+}
+
+.botaoLinkLaranjaDossie:hover {
+    cursor: pointer;
+    background-color: rgb(218, 98, 0);
+}
+
+.botaoLinkLaranja:hover {
+    cursor: pointer;
+    background-color: rgb(218, 98, 0);
+}
 
 /* ---------------------------------- */
 
 @media (min-width: 768px) {
 
     .manual {
-        width: 235px;
+        width: 400px;
     }
 
     .doisUltimos {
         flex-direction: row;
-    }
-
-    #letrus {
-        margin-right: 40px;
     }
 
     .botoes .icones {
@@ -226,21 +240,17 @@
         flex-direction: row;
     }
 
-    .parceiros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0px 500px 0px 500px;
+    #recuo {
+        margin-top: 60px;
     }
 
-    #recuo {
-        margin-top: 15px;
+
+    .seçãoRow {
+        flex-direction: column;
     }
 
     .seção {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .ps {
@@ -267,386 +277,711 @@
     .texto {
         width: 40vw;
     }
-
-    .textoDoacao {
-        width: 40vw;
-    }
     
     #quemSomos {
         margin-top: 0px;
     }
+
+    .tituloPrincipal{
+        width: 40vw;
+    }
 }
-
-    .h-foto h1 {
-        font-family: Ubuntu, sans-serif;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        font-weight: bolder;
-        font-size: 25px;
-    }
-
-    .h-foto {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .t-fotoE{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .t-fotoE h1 {
-        font-family: Ubuntu, sans-serif;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        font-weight: bolder;
-        font-size: 25px;
-    }
-
-    .listaFunciona {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .listaItem{
-        margin-top: 10px;
-    }
 
     @media (min-width: 1024px) {
+
+        .dossie22{
+            width: 100%;
+        }
+        
+        .dossie29{
+            width: 100%;
+        }
+
+        .seçãoRow {
+            flex-direction: row;
+        }
+    
+        .seção {
+            flex-direction: column;
+        }
+    
+        .ps {
+            font-size: 25px;
+        }
+        .ps h1 {
+            font-size: 40px;
+        }
+        
+        .apoio {
+            font-size: 40px;
+        }
+        
+        .svg {
+            width: 400px;
+            height: 340px;
+            background-size: cover;
+        }
+        
     }
 
-    /* ------------------------- */
+    .posicao{
+        flex-direction: row;
+    }
 
-   /* ----------Slider------------- */
+    /* --------------------------------- */
 
-.slider{
-    display: block;
-    width: 100%;
-    float: left;
-    position: relative;
-}
-
-.slider .slider_item{
-   display: block;
-   float: left;
-   width: 100%;
-   height: 825px;
-   background-size: cover;
-   background-position: center;
-   background-color: #14385C;
-   position: absolute;
-   transition-property: all;
-   transition-duration: .5s;
-   transition-timing-function: ease-in;
-   transition-delay: 0.5s;
-   opacity: 0;
-}
-
-.slider .slider_item.active{
-   opacity: 1;
-}
-
-.slider .slider_item img{
-   width: 100%;
-   display: block;
-   float: left;
-}
-
-.slider .slider_box{
-   float: center;
-   width: 100%;
-   height: 100%;
-   position: relative;
-}
-
-.slider .slider_content{
-   display: block;
-   float: left;
-   width: 100%;
-   height: 100%;
-   padding: 100px 30% 15px 30%;
-   background: rgba(20, 56, 92, 0.6);
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   text-align: center;
-}
-
-.slider h2,
-.slider p{
-    font-family: 'Open Sans', sans-serif;
-    position: center;
-    top: -30px;
-    opacity: 0;
-}
-
-.slider .slider_content h2{
-   font-size: 1.5em;
-   color: #fff;
-   padding-bottom: 20px;
-   font-weight: bold;
-   transition-property: all;
-   transition-duration: .10s;
-   transition-timing-function: ease-in;
-   transition-delay: 0.5s;
-}
-
-.slider .slider_content p{
-   display: block;
-   float: left;
-   width: 100%;
-   color: #fff;
-   font-size: 1.35em;
-   font-weight: lighter;
-   text-align: center;
-   transition-property: all;
-   transition-duration: .8s;
-   transition-timing-function: ease-in;
-   transition-delay: 0.8s;
-}
-
-.slider .active h2,
-.slider .active p{
-   top: 0;
-   opacity:1;	
-}
-
-.slider-next,
-.slider-prev{
-   width: 80px;
-   height: 80px;
-   color: #fff;
-   text-align: center;
-   font-size: 3em;
-   line-height: 80px;
-   font-weight: lighter;
-   border-radius: 100px;
-   background: rgba(0, 0, 0, 0.5);
-   position: absolute;
-   top:220px;
-   left: 15px;
-   z-index: 99;
-}
-.slider-next{
-   right: 15px;
-   left: auto;
-   z-index: 100;
-}
-.slider-next:hover,
-.slider-prev:hover{
-   background: rgba(0, 0, 0, 0.8);
-   transition-property: all;
-   transition-duration: .5s;
-   transition-timing-function: ease-out;
-   transition-delay: 0.2s;
-   cursor: pointer;
-}
-
-
-@media all and (max-width: 1024px){
-    .slider-next,
-    .slider-prev{           
-      top:280px;        
-  }
-  .slider .slider_content{
-      padding-left: 10%;
-      padding-right: 10%;
-  }
-  .slider .slider_content h2{
-      font-size: 1.5em;
-  }
-  .slider .slider_content p{
-      font-size: 1.35em;
-  }
-
-}
-@media all and (max-width: 768px){
-   .slider-next,
-   .slider-prev{
-      top:220px;
-      width: 45px;
-      height: 45px;
-      line-height: 45px;
-      font-size: 2em;
-  }
-  .slider .slider_item{
-      height: 700px;
-  }
-  .slider .slider_content{
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 60px;
-  }
-  .slider .slider_content h2{
-      font-size: 1.5em;
-  }
-  .slider .slider_content p{
-      font-size: 1.3em;
-  }
-}
-@media all and (max-width: 667px){
-   .slider-next,
-   .slider-prev{
-      top:180px;
-      width: 45px;
-      height: 45px;
-      line-height: 45px;
-      font-size: 1.5em;
-  }
-  .slider .slider_item{
-    height: 700px;
-  }
-  .slider .slider_content{
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 75px;
-  }
-  .slider .slider_content h2{
-      font-size: 1.18em;
-  }
-  .slider .slider_content p{
-      font-size: 1.15em;
-  }
-}
-
-
-/* ----------Barra de Progresso------------- */
-
-.percent-count{
-    flex-direction: column;
-    width: 450px;
-    height: 50px;
-    margin: 100px auto;
-    font-size: 50px;
-    text-align: center;
-    color: #fff;
-}
-
-.progress-bar{
-    flex-direction: column;
-    width: 506px;
-    height: 26px;
-    background-color: white;
-    border-radius: 13px;
-    padding: 3px;
-    margin: 50px auto;
-}
-
-.progress{
-    flex-direction: column;
-    width: 0px; /* muda o tamanho da barra */
-    height: 20px;
-    border-radius: 10px;
-    background-color: #FD7C11;
-}
-
-@media all and (max-width: 1024px){
-    .percent-count{
-        flex-direction: column;
-        width: 450px;
-        height: 50px;
-        margin: 100px auto;
-        font-size: 50px;
+  .tituloBranco {    
+    font-family: Ubuntu, 'Open Sans', sans-serif;
+        display: flex;
         text-align: center;
-        color: #fff;
-    }
-    
-    .progress-bar{
         flex-direction: column;
-        width: 506px;
-        height: 26px;
-        background-color: white;
-        border-radius: 13px;
-        padding: 3px;
-        margin: 50px auto;
-    }
-    
-    .progress{
-        flex-direction: column;
-        width: 0px; /* muda o tamanho da barra */
-        height: 20px;
-        border-radius: 10px;
-        background-color: #FD7C11;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        font-size: 45px;
+        color: #FFFFFF;
+        font-weight: bolder;
+        padding-top: 50px;
     }
 
-}
-@media all and (max-width: 768px){
-    .percent-count{
-        flex-direction: column;
-        width: 450px;
-        height: 50px;
-        margin: 100px auto;
-        font-size: 50px;
+    .tituloAzul {    
+        font-family: Ubuntu, 'Open Sans', sans-serif;
+        display: flex;
         text-align: center;
-        color: #fff;
-    }
-    
-    .progress-bar{
         flex-direction: column;
-        width: 306px;
-        height: 26px;
-        background-color: white;
-        border-radius: 13px;
-        padding: 3px;
-        margin: 50px auto;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        font-size: 45px;
+        color: #14385C;
+        font-weight: bolder;
+        padding-top: 50px;
     }
-    
-    .progress{
-        flex-direction: column;
-        width: 0px; /* muda o tamanho da barra */
-        height: 20px;
-        border-radius: 10px;
-        background-color: #FD7C11;
+
+    @font-face{
+        font-family: "League Spartan";
+        src: url("..//leaguespartan-bold-webfont.woff");
     }
-}
-@media all and (max-width: 667px){
-    .percent-count{
-        flex-direction: column;
-        width: 350px;
-        height: 50px;
-        margin: 100px auto;
-        font-size: 50px;
+
+  .tituloPrincipal{    
+        font-family: Ubuntu, 'League Spartan';
+        display: flex;
         text-align: center;
-        color: #fff;
-    }
-    
-    .progress-bar{
         flex-direction: column;
-        width: 306px;
-        height: 26px;
-        background-color: white;
-        border-radius: 13px;
-        padding: 3px;
-        margin: 50px auto;
-    }
-    
-    .progress{
+        justify-content: center;
+        font-size: 40px;
+        color: #14385C;
+        font-weight: bolder;
+        padding-bottom: 100px;
+        width: 700px;
+        letter-spacing: -4px;
+        padding-top: 200x;
+  }
+
+    .tituloLaranja {    
+        font-family: Ubuntu, 'Open Sans', sans-serif;
+        display: flex;
+        text-align: center;
         flex-direction: column;
-        width: 0px; /* muda o tamanho da barra */
-        height: 20px;
-        border-radius: 10px;
-        background-color: #FD7C11;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        font-size: 45px;
+        color: #FD7C11;
+        font-weight: bolder;
+        padding-top: 50px;
     }
-}
 
-/* ------------- Fale Conosco ------------- */
+/* ------------- ICONES ------------- */
 
-.redesSociais {
+.dossie22{
+    background-image: url('..//img/Profissoes/Dossie22.png');
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    text-align: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 780px;
+    width: 100vw;
 }
 
 .ícone {
-    margin: 0px 10px 0px 10px;
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 100vw;
+    max-height: 780px;
+    z-index:999;
+}
+
+.dossie29{
+    background-image: url('..//img/Profissoes/Dossie29.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 780px;
+    width: 100vw;
+}
+
+#ArqUrb{
+    background-image: url('../img/Profissoes/ArqUrb.png');
+    height: 91.1059px;
+    width: 184.052px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#ArtesVisuais{
+    background-image: url('../img/Profissoes/ArtesVisuais.png');
+    height: 123.253px;
+    width: 121.25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Astronomia{
+    background-image: url('../img/Profissoes/Astronomia.png');
+    height: 117.37px;
+    width: 121.469px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 7px;
+}
+
+#Jornalismo{
+    background-image: url('../img/Profissoes/Jornalismo.png');
+    height: 117.525px;
+    width: 97.3987px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Marketing{
+    background-image: url('../img/Profissoes/Marketing.png');
+    height: 89.4451px;
+    width: 136.297px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 27px;
+}
+
+#TM{
+    background-image: url('../img/Profissoes/TM.png');
+    height: 118.361px;
+    width: 106.673px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#GA{
+    background-image: url('../img/Profissoes/GA.png');
+    height: 118.991px;
+    width: 118.991px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#LZT{
+    background-image: url('../img/Profissoes/LZT.png');
+    height: 118.991px;
+    width: 118.545px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Veterinaria{
+    background-image: url('../img/Profissoes/Veterinaria.png');
+    margin-bottom: -10px;
+    height: 130.192px;
+    width: 121.567px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Enfermagem{
+    background-image: url('../img/Profissoes/Enfermagem.png');
+
+    height: 120.2px;
+    width: 120.2px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Odontologia{
+    background-image: url('../img/Profissoes/Odontologia.png');
+
+    height: 120.2px;
+    width: 120.2px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#RI{
+    background-image: url('../img/Profissoes/RI.png');
+    height: 123.366px;
+    width: 123.366px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -23px;
+}
+
+#RP{
+    background-image: url('../img/Profissoes/RP.png');
+    height: 119.961px;
+    width: 119.961px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#PP{
+    background-image: url('../img/Profissoes/PP.png');
+    height: 119.961px;
+    width: 119.961px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -22px;
+}
+
+#GPP{
+    background-image: url('../img/Profissoes/GPP.png');
+    margin-bottom: -17px;
+    height: 119.961px;
+    width: 119.961px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Biotec{
+    background-image: url('../img/Profissoes/Biotec.png');
+    margin-bottom: 10px;
+    height: 119.743px;
+    width: 118.743px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Psico{
+    background-image: url('../img/Profissoes/Psico.png');
+
+    height: 135.175px;
+    width: 120.981px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ENGFE{
+    background-image: url('../img/Profissoes/ENGFE.png');
+    margin-bottom: -5px;
+    height: 120.506px;
+    width: 85.8605px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Fono{
+    background-image: url('../img/Profissoes/Fono.png');
+    margin-bottom: 20px;
+    height: 124.053px;
+    width: 118.16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#CC{
+    background-image: url('../img/Profissoes/CC.png');
+    margin-bottom: 30px;
+    height: 116.743px;
+    width: 98.502px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Direito{
+    background-image: url('../img/Profissoes/Direito.png');
+    
+    height: 118.887px;
+    width: 118.887px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ENGQPQQ{
+    background-image: url('../img/Profissoes/ENGQPQQ.png');
+    margin-bottom: -25px;
+    height: 90.6861px;
+    width: 90.6861px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Fisica{
+    background-image: url('../img/Profissoes/Fisica.png');
+    margin-bottom: 5px;
+    height: 116.77px;
+    width: 122.113px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Audiovisual{
+    background-image: url('../img/Profissoes/Audiovisual.png');
+
+    height: 128.34px;
+    width: 118.394px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Biomedicina{
+    background-image: url('../img/Profissoes/Biomedicina.png');
+
+    height: 118.584px;
+    width: 118.584px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Design{
+    background-image: url('../img/Profissoes/Design.png');
+    margin-bottom: 30px;
+    height: 64px;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ENGCA{
+    background-image: url('../img/Profissoes/ENGCA.png');
+
+    height: 109.301px;
+    width: 109.301px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#EP{
+    background-image: url('../img/Profissoes/EP.png');
+
+    height: 121.863px;
+    width: 121.863px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Nutricao{
+    background-image: url('../img/Profissoes/Nutricao.png');
+    margin-bottom: 27px;
+    height: 97.5726px;
+    width: 119.538px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Letras{
+    background-image: url('../img/Profissoes/Letras.png');
+    margin-bottom: 5px;
+    height: 109.026px;
+    width: 81.7697px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+#FB{
+    background-image: url('../img/Profissoes/FB.png');
+
+    height: 100.13px;
+    width: 100.13px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#Filosofia{
+    background-image: url('../img/Profissoes/Filosofia.png');
+
+    height: 110.6px;
+    width: 110.6px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Psicologia{
+    background-image: url('../img/Profissoes/Psicologia.png');
+
+    height: 114.919px;
+    width: 90.6422px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ADM{
+    background-image: url('../img/Profissoes/ADM.png');
+    margin-bottom: 10px;
+    height: 108.682px;
+    width: 108.682px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#EDFS{
+    background-image: url('../img/Profissoes/EDFS.png');
+    margin-bottom: -20px;
+    height: 112.804px;
+    width: 112.804px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ENGAMBFLO{
+    background-image: url('../img/Profissoes/ENGAMBFLO.png');
+    margin-bottom: -15px;
+    height: 108.476px;
+    width: 117.4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#MED{
+    background-image: url('../img/Profissoes/MED.png');
+    margin-bottom: -15px;
+    height: 119.845px;
+    width: 121.362px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#OBS{
+    background-image: url('../img/Profissoes/OBS.png');
+    margin-bottom: -16px;
+    height: 121.234px;
+    width: 121.234px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#SI{
+    background-image: url('../img/Profissoes/SI.png');
+    
+    height: 95.5077px;
+    width: 119.385px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Matematica{
+    background-image: url('../img/Profissoes/MAT.png');
+    margin-bottom: -16px;
+    height: 118.074px;
+    width: 118.074px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Economia{
+    background-image: url('../img/Profissoes/Economia.png');
+    margin-bottom: -15px;
+    height: 118.364px;
+    width: 118.364px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#CienciasSociais{
+    background-image: url('../img/Profissoes/CienciasSociais.png');
+    margin-bottom: -7px;
+    height: 115.702px;
+    width: 98.6362px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Geografia{
+    background-image: url('../img/Profissoes/Geografia.png');
+
+    height: 123.526px;
+    width: 107.313px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Cosmetica{
+    background-image: url('../img/Profissoes/Cosmetica.png');
+    margin-bottom: -10px;
+    height: 127.442px;
+    width: 125.371px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Design{
+    background-image: url('../img/Profissoes/Design.png');
+    margin-bottom: -5px;
+    height: 111.649px;
+    width: 113.928px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Contabilidade{
+    background-image: url('../img/Profissoes/Contabilidade.png');
+    margin-bottom: 8px;
+    height: 113.357px;
+    width: 110.948px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#JornalismoAzul{
+    background-image: url('../img/Profissoes/JornalismoAzul.png');
+    
+    height: 64px;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Historia{
+    background-image: url('../img/Profissoes/Historia.png');
+    
+    height: 118.207px;
+    width: 105.352px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ArtesCenicas{
+    background-image: url('../img/Profissoes/ArtesCenicas.png');
+   
+    height: 108.143px;
+    width: 129.902px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Biologia{
+    background-image: url('../img/Profissoes/Biologia.png');
+
+    height: 113.123px;
+    width: 113.123px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ADMPublica{
+    background-image: url('../img/Profissoes/ADMPublica.png');
+
+    height: 118.207px;
+    width: 122.02px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#PPAzul{
+    background-image: url('../img/Profissoes/PPAzul.png');
+
+    height: 120.949px;
+    width: 118.984px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#GPPAzul{
+    background-image: url('../img/Profissoes/GPPAzul.png');
+    margin-bottom: -10px;
+    height: 64px;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Pedagogia{
+    background-image: url('../img/Profissoes/Pedagogia.png');
+
+    height: 123.467px;
+    width: 123.467px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#EngCivil{
+    background-image: url('../img/Profissoes/EngCivil.png');
+
+    height: 123.467px;
+    width: 107.879px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Geologia{
+    background-image: url('../img/Profissoes/geologia.png');
+
+    height: 116.418px;
+    width: 120.484px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Geociencias{
+    background-image: url('../img/Profissoes/Geociencia.png');
+    margin-bottom: 10px;
+    height: 118.085px;
+    width: 118.085px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#UFABC{
+    background-image: url('../img/Profissoes/UFABC.png');
+    margin-bottom: 15px;
+    height: 109.026px;
+    width: 81.7697px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.faleComAGente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.faleComAGente p {
+    color: white;
+    font-weight: bold;
+}
+   
+/* ------------- Fale Conosco ------------- */
+
+.fineLine {
+    display: flex;
+    margin: auto;
+    background-color: white;
+    height: 1px;
+    width: 50vw;
+    margin: 100px auto 100px auto;
+}
+
+.logoBranco {
+    background-image: url('../img/logobranco.PNG');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ícones {
+    margin: 0px 10px 30px 10px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -654,19 +989,12 @@
     font-family: 'Ubuntu', sans-serif;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-weight: 30;
+    font-weight: 400;
     letter-spacing: 3px;
 }
 
-
-.faleComAGente {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 100;
+.final {
+    height: 30px;
+    width: 100vw;
 }
-
-.faleComAGente {
-    color: white;
-    font-weight: bold;
-}
+/* ------------------------------------------ */
