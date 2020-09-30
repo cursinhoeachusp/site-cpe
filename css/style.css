@@ -425,7 +425,7 @@
 
 .progress{
     flex-direction: column;
-    width: 384px; /* muda o tamanho da barra */
+    width: 500px; /* muda o tamanho da barra */
     height: 20px;
     border-radius: 10px;
     background-color: #FD7C11;
@@ -454,7 +454,7 @@
     
     .progress{
         flex-direction: column;
-        width: 384px; /* muda o tamanho da barra */
+        width: 500px; /* muda o tamanho da barra */
         height: 20px;
         border-radius: 10px;
         background-color: #FD7C11;
@@ -484,7 +484,7 @@
     
     .progress{
         flex-direction: column;
-        width: 230.4px; /* muda o tamanho da barra */
+        width: 300px; /* muda o tamanho da barra */
         height: 20px;
         border-radius: 10px;
         background-color: #FD7C11;
@@ -513,7 +513,7 @@
     
     .progress{
         flex-direction: column;
-        width: 230.4px; /* muda o tamanho da barra */
+        width: 300x; /* muda o tamanho da barra */
         height: 20px;
         border-radius: 10px;
         background-color: #FD7C11;
