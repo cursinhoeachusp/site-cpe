@@ -25,7 +25,11 @@ coral - #ee7153
 
     .masthead {
         background-position: center;
-        height: 450px;
+        /* height: 450px; */
+    }
+
+    .masthead h1 {
+        /* font-size: 25px !important; */
     }
 
     #background {
@@ -53,9 +57,9 @@ coral - #ee7153
     }
 
 
-    footer {
+    /* footer {
         background-color: #12385b;
-    }
+    } */
 
 
 }
@@ -64,6 +68,11 @@ coral - #ee7153
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
    
+
+    /*  
+     ************************ CSS DO HEADER ************************
+     */
+
     /* logo desktop */
     .logo {
     content: url("../img/Logotipo/negativo.png");
@@ -77,7 +86,7 @@ coral - #ee7153
     .masthead {
         background-position-y: -345px !important;
         background-position: center;
-        height: 550px;
+        /* height: 550px; */
     }
 
     /* botão doe agora */
@@ -94,6 +103,10 @@ coral - #ee7153
         font-size: larger; 
     }
 
+    /************************* FIM DO CSS DO HEADER *************************/
+
+
+
 
     .estudeConosco {
         text-align: center;
@@ -104,6 +117,10 @@ coral - #ee7153
     #porqueEscolher {
         margin-top: 100px;
         /* background-color: #ef7b20; */
+    }
+
+    footer {
+        padding: 20px 0px 20px 0px;
     }
  
 }
