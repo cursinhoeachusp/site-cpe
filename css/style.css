@@ -1,384 +1,111 @@
-.corpo {
-    background-color: #14385C;
-    width: 100vw;
-}
-
-/* ------------- Header ------------- */
-
-.faixaDoLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 170px;
-    background-color: white;
-}
-
-.logo-cursinho {
-    background-image: url('../img/logo.png');
-    width: 170px;
-    height: 170px;
-    background-size: cover;
-}
-
-/* -------------------------------------- */
-
-
-/* ------------- Genéricos ------------- */
-.seção {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.texto {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px 20px;
-
-    font-size: larger;
-    color: white;
-}
-
-/* -------------------------------------- */
-
-
-
-
-/* ------------- SVGS ------------- */
-
-.svg {
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-}
-
-#comoFunc {
-    background-image: url('../img/wfh_9.svg');
-    margin-top: 40px;
-}
-
-#vemComAGente {
-    background-image: url('../img/wfh_1.svg');
-}
-
-#quemSomos
-{
-    background-image: url('../img/atena-cpe-branca.png');
-    margin-top: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* -------------------------------------- */
-
-
-
-
-
-/* ------------- PARCEIROS ------------- */
-
-#apoio {
-    text-align: center;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 25px;
-}
-
-
-.parceiros {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.parceiro {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 10px 0px 10px 0px;
-}
-
-#anglo {
-    max-width: 180px;
-    max-height: 180px;
-}
-
-.doisUltimos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#letrus {
-    width: 190px;
-    height: 109px;
-}
-
-/* -------------------------------------- */
-
-
-.faleComAGente {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.faleComAGente p {
-    color: white;
-    font-weight: bold;
-}
-
-.comoFunc {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.quemSomos {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-/* ------------- Fale Conosco ------------- */
-
-.fineLine {
-    display: flex;
-    margin: auto;
-    background-color: white;
-    height: 1px;
-    width: 50vw;
-    margin: 100px auto 100px auto;
-}
-
-.logoBranco {
-    background-image: url('../img/logobranco.PNG');
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-}
-
-.redesSociais {
-    display: flex;
-    justify-content: space-around;
-}
-
-.ícone {
-    margin: 0px 10px 30px 10px;
-    max-width: 50px;
-    max-height: 50px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-.faleComAGente p {
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    letter-spacing: 3px;
-}
-
-.final {
-    height: 30px;
-    width: 100vw;
-}
-/* ------------------------------------------ */
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-
-.ps h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.ps {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.subtitulo {
-    text-align: center;
-    color: white;
-    padding-top: 60px;
-}
-
-
-
-/* ------------- BOTÕES ------------- */
-.botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.botao {
-    background-color: #FD7C11;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    /* text-decoration-color: #14385C; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 205px;
-    color: white;
-}
-
-.botoes .icones {
-    width: 100px;
-    height: 100px;
-    margin-top: 25px;
-}
-
-.botoes .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 30px 0px 30px;
-}
-
-.manual {
-    width: 205px;
-}
-
-.botao:hover {
-    cursor: pointer;
-    background-color: rgb(228, 107, 8);
-}
-/* ---------------------------------- */
-
-
-
-@media (min-width: 768px) {
-
-    .manual {
-        width: 235px;
-    }
-
-    .doisUltimos {
-        flex-direction: row;
-    }
-
-    #letrus {
-        margin-right: 40px;
-    }
-
-    .botoes .icones {
-        width: 150px;
-        height: 150px;
-    }
-
-    .botoes {
-        flex-direction: row;
-    }
-
-    .parceiros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0px 500px 0px 500px;
-    }
-
-    #recuo {
-        margin-top: 60px;
-    }
-
-    .seção {
-        flex-direction: row;
-    }
-
-    .ps {
-        font-size: 25px;
-    }
-    .ps h1 {
-        font-size: 40px;
-    }
+/* paleta de cores 
+laranja -  #ef7b20
+azul escuro - #12385b
+azul médio - #3676bb
+azul claro - #72a4d6
+*/
+
+/* cores complementares
+rosa - #dc74a1
+azul - #3b668c
+
+amarelo - #fdc41c
+coral - #ee7153
+*/
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
     
-    .apoio {
-        font-size: 40px;
+    /* logo mobile */
+    .logo {
+        content: url("../img/Logotipo/prioritario.png");
+        width: auto;
+        height: 80px;
     }
-    
-    .svg {
-        width: 400px;
-        height: 340px;
-        background-size: cover;
+
+    .masthead {
+        background-position: center;
+        height: 450px;
     }
-    
-    .ps {
-        font-size: 30px;
+
+    #background {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-around !important;
     }
-    
-    .texto {
-        width: 40vw;
+
+
+    /* desativação do botão Doe Agora no Mobile */
+    .btn-outline-primary {
+        margin-top: -17px;
+        border: none;
+        color: black;
     }
-    
-    #quemSomos {
-        margin-top: 0px;
+
+    .dropdown-item {
+        font-size: 13px;
+        font-weight: bold;
+        color: gray;
     }
+
+    .dropdown-item:active {
+        background-color:#3b668c;
+    }
+
+
+    footer {
+        background-color: #12385b;
+    }
+
+
 }
 
-.h-foto h1 {
-    font-family: Ubuntu, sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-    font-weight: bolder;
-    font-size: 25px;
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+   
+    /* logo desktop */
+    .logo {
+    content: url("../img/Logotipo/negativo.png");
+    transition: transform .2s;
+    }
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    /* correção do wallpaper */
+    .masthead {
+        background-position-y: -345px !important;
+        background-position: center;
+        height: 550px;
+    }
+
+    /* botão doe agora */
+    .doeAgora {
+        border: solid 1px #ef7b20;
+        color:  #ef7b20;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .doeAgora:hover {
+        background-color:  #ef7b20;
+        color: white;
+        font-size: larger; 
+    }
+
+
+    .estudeConosco {
+        text-align: center;
+        color: #12385b;
+    }
+
+
+    #porqueEscolher {
+        margin-top: 100px;
+        /* background-color: #ef7b20; */
+    }
+ 
 }
-.h-foto {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-}
-
-.fotoAlunos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('..//img/IMG_6215.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 550px;
-    width: 100vw;
-}
-
-.listaFunciona {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.listaItem{
-    margin-top: 10px;
-}
-
-
-
-
-
-@media (min-width: 1024px) {
-
-}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
