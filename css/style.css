@@ -16,6 +16,7 @@ coral - #ee7153
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
     
+
     /* logo mobile */
     .logo {
         content: url("../img/Logotipo/prioritario.png");
@@ -29,13 +30,14 @@ coral - #ee7153
     }
 
     .masthead h1 {
-        /* font-size: 25px !important; */
+        font-size: 38px !important;  
+        /* desktop font-size: 80px */
     }
 
-    #background {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: space-around !important;
+    .site-heading {
+        /* background-color: #12385b !important; */
+        /* padding: 300px 0px 20px 0px !important; */
+        justify-content: ;
     }
 
 
@@ -89,6 +91,12 @@ coral - #ee7153
         /* height: 550px; */
     }
 
+    .masthead #cpe {
+        font-size: 80px !important;
+        /* background-color: aqua; */
+        width: 1220px;
+    }
+
     /* botão doe agora */
     .doeAgora {
         border: solid 1px #ef7b20;
@@ -102,12 +110,15 @@ coral - #ee7153
         color: white;
         font-size: larger; 
     }
-
     /************************* FIM DO CSS DO HEADER *************************/
 
 
 
 
+
+
+
+    
     .estudeConosco {
         text-align: center;
         color: #12385b;

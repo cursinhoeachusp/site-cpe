@@ -16,4 +16,6 @@
     </div>
 </header>
 
+<!-- CONTEÚDO DA PÁGINA -->
+
 <?php include('common/footer.html'); ?>
