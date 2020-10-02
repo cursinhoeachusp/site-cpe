@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-  <title>Cursinho Popular EACH - USP</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Nosso CSS -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- CSS -->  
+    <link rel="stylesheet" href="css\style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursinho EACH</title>
 </head>
-
 <header>
-  <div class="faixaDoLogo">
-    <div class="row">
-      <div class="logo-cursinho"></div>
+    <div class="faixaHeader">
+        <img class="logoPequeno" src="img\LogoCPE - Negativo.png" alt="LogoCPE">
     </div>
-  </div>
 </header>
-
 <body>
+ 
 
-  <div class="corpo">
+    <div id="carouselCPE" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block img-fluid w-100" src="img\Slide1.jpg" alt="Primeiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Somos um cursinho pré univesitário que busca transformar em realidade o sonho de entrar na universidade</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid w-100" src="img\Slide3.jpg" alt="Terceiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>São duas turmas (Vespertino e Noturno) de 60 estudantes cada por ano</h5>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image">
+            <img src="img\Slide4.jpg" class="d-block img-fluid w-100" alt="">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Toda nossa equipe de professores e plantonistas é voluntária e dedicada com a causa do CPE</h5>
+            </div>
+        </div>
+            
+          <div class="carousel-item">
+            <img class="d-block img-fluid w-100" src="img\Slide2.jpg" alt="Segundo Slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Nossa equipe administrativa é composta por alunos da USP que acreditam na educação</h5>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselCPE" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselCPE" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+
 
     <div class="fotoAlunos">
       <div class="h-foto">
@@ -36,103 +68,90 @@
       <h1 id="ps">Vem Estudar Com A Gente!</h1>
     </div>
 
-    <div class="seção">
-
-      <div class="svg" id="vemComAGente"></div>
-
-      <div class="texto">
-        <h3> <b>Cursinho Popular EACH - USP</b> </h3>
-        <p>
-          Estude no Cursinho com acompanhamento de qualidade sem pagar <b>nenhuma taxa ou mensalidade</b>.
-        </p>
-        <p>
-          O <b>Cursinho Popular EACH - USP</b> está oferecendo xx vagas para a turma de meio de ano. 
-          Faça sua inscrição entre os dias <b>24 de junho e 05
-          de julho de 2020</b>.
-        </p>
-
-        <div class="botoes">
-          <a href="">
-            <button class="botao"><b>Edital</b></button>
-          </a>
-          <a href="">
-            <button class="botao"><b>Inscreva-se</b></button>
-          </a>
-          <a href="">
-            <button class="botao manual"><b>Manual do Candidato</b></button>
-          </a>
+    <div class="divInformeSite">
+        <img class="informeAtena" src="img\AtenaCamisaAzul.png" alt="">
+        <div class = "contentInforme">
+            <h1>Oi! Somos o Cursinho Popular EACH USP (e eu sou a Atena)</h1>
+            <p>Ainda estamos ajeitando umas coisinhas, mas logo vai ter um site incrivel pra você</p>
+            <p>Enquanto isso, reunimos algumas coisas aqui</p>
         </div>
+    </div>
 
+    <div class="divBoxes">
+        <div class="divBoxCentral boxCentral">
+            <div class="opacityBoxCentral">
+                <div class="contentBox">
+                <h4>Quer contribuir com o CPE?</h4>
+                <p>Conheça o cursinho e também nossa campanha de doação ara a Fuvest 2020</p>
+                <a class="btn btn-primary" href="http://doacao.cursinhoeach.com.br" role="button">O que é o CPE?</a> <br>
+                </div>
+            </div>
+        </div>
+        <div class="divBoxCentral boxNoticia">
+            <div class="opacityBoxCentral">
+                <div class="contentBox">
+                <h4>Sabia que estamos doando alguns materiais?</h4>
+                <p>Confere aqui como conseguir livros pra você também</p>
+                <a class="btn btn-primary" href="http://bit.ly/DoacaoLivrosDidaticos" role="button">Saiba Mais</a> <br>
+                </div>
+            </div>
+        </div>
+        <div class="divBoxCentral boxMostra">
+          <div class="opacityBoxCentral">
+              <div class="contentBox">
+              <h4>Mostra de Profissões do CPE - 2020</h4>
+              <p>Perdeu algum evento ou quer rever? Só clicar aqui</p>
+              <a class="btn btn-primary" href="http://mostra.cursinhoeach.com.br" role="button">Mostra 2020</a> <br>
+              </div>
+          </div>
       </div>
-
+        <div class="divBoxCentral boxAluno">
+            <div class="opacityBoxCentral">
+                <div class="contentBox">
+                <h4>Você é alune do CPE?</h4>
+                <p>Olha aqui as plataformas reunidas pra você</p>
+                <a class="btn btn-primary" href="https://cursinhoeach.com.br/moodle" role="button">Moodle</a> 
+                <a class="btn btn-primary" href="https://login.plurall.net/" role="button">Plurall</a> 
+                <a class="btn btn-primary" href="https://www.qmagico.com.br/" role="button">QMagico</a> 
+                <a class="btn btn-primary" href="https://www.letrus.com.br/" role="button">Letrus</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="seção quemSomos" id="recuo">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-      <div class="texto">
-        <h3> <b>Quem Somos</b> </h3>
-        <p>
-          Juntos transformamos sonhos em realidade! O Cursinho Popular EACH-USP é 
-          formado universitários voluntários que acreditam no poder transformador 
-          da educação, por meio de uma educação crítica, gratuita e de qualidade.
-        </p>
-      </div>
-
-      <div class="svg" id="quemSomos"></div>
-    </div>
-
-    <h3 id="apoio"><b>Quem Apoia Nossa Causa</b></h3>
-    <div class="parceiros">
-      <img src="./img/Parceiros/01-Desc-Marca-Principal.png" alt="" class="parceiro">
-      <img src="./img/Parceiros/1_eE-xCk5njQuZxijVIo-zMg@2x.png" alt="" class="parceiro">
-      <img src="./img/Parceiros/each-branco-ok.png" alt="" class="parceiro">
-      <img src="./img/Parceiros/letrus-squarelogo-1588077623326-removebg-preview.png" alt="" class="parceiro">
-      <img src="./img/Parceiros/anglo.png" alt="" class="parceiro" id="anglo">
-    </div>
-
-    <div class="fineLine"></div>
-    <div class="faleComAGente">
-      <div class="logoBranco"></div>
-
-      <div class="redesSociais">
-        <a href="https://br.linkedin.com/company/cursinho-popular-each-usp" target="_blank">
-          <img src="./img/Social Media/linkedin.png" alt="" class="ícone">
-        </a>
-        
-        <a href="https://www.facebook.com/CursinhoPopularEACH" target="_blank">
-          <img src="./img/Social Media/facebook.png" alt="" class="ícone">
-        </a>
-        
-        <a href="https://www.instagram.com/cursinhoeachusp/" target="_blank">
-          <img src="./img/Social Media/instagram-sketched.png" alt="" class="ícone">
-        </a>
-
-        <a href="https://www.google.com.br/maps/dir//Cursinho+Popular+EACH+USP+-+Rua+Arlindo+B%C3%A9ttio,+1000+-+Jardim+Keralux,+S%C3%A3o+Paulo+-+SP/@-23.481952,-46.5034877,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94ce6014a2e7522b:0x1005b9d5e613a835!2m2!1d-46.501299!2d-23.4819569!3e0" target="_blank">
-          <img src="./img/Social Media/maps.png" alt="" class="ícone">
-        </a>
-
-        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-          <img src="./img/Social Media/mail.PNG" alt="" class="ícone">
-        </a>
-
-      </div>
-
-      <p>EACH - USP Leste</p>
-      <p>-</p>
-      <p>Balcão do Cursinho</p>
-      <p>Sala 155 - I1</p>
-
-      <div class="final"></div>
-
-      
-    </div>
-
-
-
-  </div>
-
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
 </body>
 
+<footer>
+    <div class="faixaFooter">
+        <div class="faleComAGente">
+            <div class="redesSociais">
+              <a href="https://br.linkedin.com/company/cursinho-popular-each-usp" target="_blank">
+                <img src="img\SocialMedia\linkedin.png" alt="" class="icones">
+              </a>
+              
+              <a href="https://www.facebook.com/CursinhoPopularEACH" target="_blank">
+                <img src="img/SocialMedia/facebook.png" alt="" class="icones">
+              </a>
+              
+              <a href="https://www.instagram.com/cursinhoeachusp/" target="_blank">
+                <img src="img/SocialMedia/instagram-sketched.png" alt="" class="icones">
+              </a>
+      
+              <a href="https://www.google.com.br/maps/dir//Cursinho+Popular+EACH+USP+-+Rua+Arlindo+B%C3%A9ttio,+1000+-+Jardim+Keralux,+S%C3%A3o+Paulo+-+SP/@-23.481952,-46.5034877,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94ce6014a2e7522b:0x1005b9d5e613a835!2m2!1d-46.501299!2d-23.4819569!3e0" target="_blank">
+                <img src="img/SocialMedia/maps.png" alt="" class="icones">
+              </a>
+              <a href="mailto:atendimento@cursinhoeach.com.br?Subject=Oi%20CPE" target="_top">
+                <img src="img/SocialMedia/mail.png" alt="" class="icones">
+              </a>       
+            </div>
+        </div>
+        <br>
+        <p>Cursinho Popular EACH USP - 2020</p>
+
+    </div>
+</footer>
 </html>
