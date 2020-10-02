@@ -1,384 +1,239 @@
-.corpo {
-    background-color: #14385C;
-    width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+
+/*--------------HEADER--------------*/
+
+.faixaHeader {
+    display: block;
+    background-color: #12385B;
+    width: auto;
+    height: 100px;
+    padding: 10px;
 }
 
-/* ------------- Header ------------- */
-
-.faixaDoLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 170px;
-    background-color: white;
+@media (max-width: 768px){
+    .faixaHeader {
+        display: block;
+        background-color: #12385B;
+        width: auto;
+        height: 100px;
+        padding: 10px;
+    }
 }
 
-.logo-cursinho {
-    background-image: url('../img/logo.png');
-    width: 170px;
-    height: 170px;
-    background-size: cover;
-}
+/*--------------CAROUSEL--------------*/
 
-/* -------------------------------------- */
-
-
-/* ------------- Genéricos ------------- */
-.seção {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.texto {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px 20px;
-
-    font-size: larger;
-    color: white;
-}
-
-/* -------------------------------------- */
-
-
-
-
-/* ------------- SVGS ------------- */
-
-.svg {
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-}
-
-#comoFunc {
-    background-image: url('../img/wfh_9.svg');
-    margin-top: 40px;
-}
-
-#vemComAGente {
-    background-image: url('../img/wfh_1.svg');
-}
-
-#quemSomos
+.carousel-caption > h5
 {
-    background-image: url('../img/atena-cpe-branca.png');
-    margin-top: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* -------------------------------------- */
-
-
-
-
-
-/* ------------- PARCEIROS ------------- */
-
-#apoio {
-    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    text-shadow: 2px 2px #EF7A20;
     color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Spartan', sans-serif;
 }
 
+/*--------------INFORME--------------*/
 
-.parceiros {
+.divInformeSite
+{
+    width: auto;
+    height: 150px;
+    background-color: #12385B;
+
+    
+    padding: 10px;
+
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.parceiro {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 10px 0px 10px 0px;
-}
-
-#anglo {
-    max-width: 180px;
-    max-height: 180px;
-}
-
-.doisUltimos {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-#letrus {
-    width: 190px;
-    height: 109px;
+.divInformeSite > img{
+    margin: 0;
+    height: 100%;
 }
 
-/* -------------------------------------- */
-
-
-.faleComAGente {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.contentInforme{
+    max-width: auto;
+    text-align: center;
 }
 
-.faleComAGente p {
+.contentInforme > h1{
+    font-size: 25px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #EF7A20;;
     color: white;
+
+    font-family: 'Spartan', sans-serif;
     font-weight: bold;
 }
 
-.comoFunc {
+@media (max-width: 768px){
+    
+    .divInformeSite{
+    width: auto;
+    height: fit-content;
+    background-color: #12385B;;
+    
+    padding: 10px;
+
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .divInformeSite > img{
+        margin: 0;
+        height: 100px;
+    }
+
+    .contentInforme{
+        max-width: 75%;
+        text-align: center;
+    }
+
+    .contentInforme > h1{
+        font-size: 20px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid #EF7A20;
+    }
 }
 
-.quemSomos {
+
+/*--------------BOXES--------------*/
+
+.divBoxes{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(61, 118, 186);
+}
+
+.divBoxCentral{
+    width: 75%;
+    height: 150px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+@media (max-width: 768px){
+    .divBoxCentral{
+        width: 75%;
+        height: fit-content;
+        margin: 20px;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
 }
 
 
-
-/* ------------- Fale Conosco ------------- */
-
-.fineLine {
-    display: flex;
-    margin: auto;
-    background-color: white;
-    height: 1px;
-    width: 50vw;
-    margin: 100px auto 100px auto;
-}
-
-.logoBranco {
-    background-image: url('../img/logobranco.PNG');
+.boxAluno {
+    background-image: url(../img/imagem1.jpeg);
     background-size: cover;
-    width: 200px;
-    height: 200px;
+}
+.boxNoticia{
+    background-image: url(../img/camapanhaMateriais.jpg);
+    background-size: cover;
+}
+.boxCentral{
+    background-image: url(../img/campanhaFuvest.jpg);
+    background-size: cover;
+}
+.boxMostra{
+    background-image: url(../img/MostraDeProfissoes.png);
+    background-size: contain;
 }
 
+.opacityBoxCentral{
+    background-color: rgba(117, 165, 214, 0.6);
+    height: 100%;
+    
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+    .opacityBoxCentral{
+        background-color: rgba(117, 165, 214, 0.6);
+        height: fit-content;
+        
+        border-radius: 20px;
+    
+        display: flex;
+        justify-content: center;
+    }
+}
+.contentBox{
+    text-align: center;
+    width: 75%;
+    max-height: 100%;
+    margin: 10px auto;
+    padding: 10px 50px;
+    
+    background-color: rgba(239, 122, 32, 0.8);
+    border-radius: 15px;
+}
+.contentBox > h4{
+    
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+}
+.contentBox > a
+{
+    margin: 5px;
+}
+
+/* -------------- FOOTER -------------- */
+.faixaFooter {
+    background-color: #12385B;
+    width: auto;
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+}
+.faleComAGente {
+    font-weight: bold;
+    width: 50%;
+}
 .redesSociais {
     display: flex;
-    justify-content: space-around;
-}
-
-.ícone {
-    margin: 0px 10px 30px 10px;
-    max-width: 50px;
-    max-height: 50px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-.faleComAGente p {
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    letter-spacing: 3px;
-}
-
-.final {
-    height: 30px;
-    width: 100vw;
-}
-/* ------------------------------------------ */
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-
-.ps h1 {
-    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
     text-align: center;
-    color: white;
-    padding-top: 30px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 25px;
+    z-index:999;
 }
 
-.ps {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.subtitulo {
-    text-align: center;
-    color: white;
-    padding-top: 60px;
+.icones {
+    width: 40px;
+    height: 40px;
+    z-index:999;
+    
+    margin: 0 10px;
 }
 
 
+/*--------------------------------------*/
 
-/* ------------- BOTÕES ------------- */
-.botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.logoPequeno{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
 }
-
-.botao {
-    background-color: #FD7C11;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    /* text-decoration-color: #14385C; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 205px;
+p{
+    margin: auto;
     color: white;
 }
-
-.botoes .icones {
-    width: 100px;
-    height: 100px;
-    margin-top: 25px;
-}
-
-.botoes .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 30px 0px 30px;
-}
-
-.manual {
-    width: 205px;
-}
-
-.botao:hover {
-    cursor: pointer;
-    background-color: rgb(228, 107, 8);
-}
-/* ---------------------------------- */
-
-
-
-@media (min-width: 768px) {
-
-    .manual {
-        width: 235px;
-    }
-
-    .doisUltimos {
-        flex-direction: row;
-    }
-
-    #letrus {
-        margin-right: 40px;
-    }
-
-    .botoes .icones {
-        width: 150px;
-        height: 150px;
-    }
-
-    .botoes {
-        flex-direction: row;
-    }
-
-    .parceiros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0px 500px 0px 500px;
-    }
-
-    #recuo {
-        margin-top: 60px;
-    }
-
-    .seção {
-        flex-direction: row;
-    }
-
-    .ps {
-        font-size: 25px;
-    }
-    .ps h1 {
-        font-size: 40px;
-    }
-    
-    .apoio {
-        font-size: 40px;
-    }
-    
-    .svg {
-        width: 400px;
-        height: 340px;
-        background-size: cover;
-    }
-    
-    .ps {
-        font-size: 30px;
-    }
-    
-    .texto {
-        width: 40vw;
-    }
-    
-    #quemSomos {
-        margin-top: 0px;
-    }
-}
-
-.h-foto h1 {
-    font-family: Ubuntu, sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 30px;
-    font-weight: bolder;
-    font-size: 25px;
-}
-.h-foto {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-}
-
-.fotoAlunos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('..//img/IMG_6215.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 550px;
-    width: 100vw;
-}
-
-.listaFunciona {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.listaItem{
-    margin-top: 10px;
-}
-
-
-
-
-
-@media (min-width: 1024px) {
-
+.carousel-image{
+    max-height: 100%;
 }
