@@ -32,22 +32,6 @@
 
 /* ------------- Genéricos ------------- */
 
-.trianguloTitulo{
-    background-image: url('..//img/triangulosTitulo.png');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    background-position: 100px 150px;
-}
-
 .fineLineLaranja {
     display: flex;
     margin: auto;
@@ -184,115 +168,6 @@
 
 /* -------------------------------------- */
 
-
-
-
-
-/* ------------- PARCEIROS ------------- */
-
-#apoio {
-    text-align: center;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 25px;
-}
-
-
-.parceiros {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.parceiro {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 10px 0px 10px 0px;
-}
-
-#anglo {
-    max-width: 180px;
-    max-height: 180px;
-}
-
-.doisUltimos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#letrus {
-    width: 190px;
-    height: 109px;
-}
-
-/* -------------------------------------- */
-
-.faleComAGente {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.faleComAGente {
-    color: white;
-    font-weight: bold;
-}
-
-.comoFunc {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.quemSomos {
-    display: flex;
-    flex-direction: column;
-}
-
-/* ------------- Fale Conosco ------------- */
-
-.fineLine {
-    display: flex;
-    margin: auto;
-    background-color: white;
-    height: 1px;
-    width: 50vw;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.logoBranco {
-    background-image: url('../img/logobranco.PNG');
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-}
-
-.redesSociais {
-    display: flex;
-    justify-content: space-around;
-}
-
-.ícone {
-    margin: 0px 10px 30px 10px;
-    max-width: 50px;
-    max-height: 50px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-.faleComAGente p {
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    letter-spacing: 3px;
-}
-
 .final {
     height: 30px;
     width: 100vw;
@@ -340,13 +215,6 @@
     font-weight: bolder;
     font-size: 30px;
 }
-
-.subtitulo {
-    text-align: center;
-    color: white;
-    padding-top: 60px;
-}
-
 
 .tituloEspecial h1 {
     font-family: 'Open Sans', sans-serif;
@@ -490,14 +358,6 @@
         width: 400px;
     }
 
-    .doisUltimos {
-        flex-direction: row;
-    }
-
-    #letrus {
-        margin-right: 40px;
-    }
-
     .botoes .icones {
         width: 150px;
         height: 150px;
@@ -505,15 +365,6 @@
 
     .botoes {
         flex-direction: row;
-    }
-
-    .parceiros {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0px 500px 0px 500px;
     }
 
     #recuo {
@@ -528,16 +379,6 @@
         flex-direction: column;
     }
 
-    .ps {
-        font-size: 25px;
-    }
-    .ps h1 {
-        font-size: 40px;
-    }
-    
-    .apoio {
-        font-size: 40px;
-    }
     
     .svg {
         width: 400px;
@@ -545,74 +386,12 @@
         background-size: cover;
     }
     
-    .ps {
-        font-size: 30px;
-    }
-    
     .texto {
         width: 40vw;
     }
     
-    #quemSomos {
-        margin-top: 0px;
-    }
 }
 
-    .h-foto h1 {
-        font-family: Ubuntu, sans-serif;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        font-weight: bolder;
-        font-size: 25px;
-    }
-
-    .h-foto {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .t-fotoE{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .t-fotoE h1 {
-        font-family: Ubuntu, sans-serif;
-        text-align: center;
-        color: white;
-        padding-top: 30px;
-        font-weight: bolder;
-        font-size: 25px;
-    }
-
-    .setaInteresse{
-        background-image: url('..//img/trianguloSeta.png');
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat;
-        height: 90px;
-        width: 90px;
-        transform: rotate(180deg);
-        margin-bottom: 0px;
-    }
-
-    .fotoAlunos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url('..//img/alunos.jpeg');
-        background-size: cover;
-        background-position: center; 
-        background-repeat: no-repeat;
-        height: 550px;
-        width: 100vw;
-    }
 
     .fotoEquipe{
         background-image: url('..//img/equipe.jpeg');
@@ -626,19 +405,5 @@
         width: 100vw;
     }
 
-    .listaFunciona {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .listaItem{
-        margin-top: 10px;
-    }
-
     @media (min-width: 1024px) {
-    }
-
-    .posicao{
-        flex-direction: row;
     }
