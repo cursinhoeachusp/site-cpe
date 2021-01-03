@@ -138,39 +138,20 @@ coral - #ee7153
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
+
+/************************* CSS DAS PÁGINAS DE CONTEÚDO *************************/
+
+/* ------------- Genéricos ------------- */
+
 .corpo {
     background-color: #14385C;
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif; 
+    color: #FFFFFF; 
 }
 
 .triangulosFundo{
     background-image: url('../img/triangulosFundo.png');
     background-size: 300px;
-
 }
-
-/* ------------- Header ------------- */
-
-.faixaDoLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background-color: white;
-}
-
-.logo-cursinho {
-    background-image: url('../img/logo.png');
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-}
-
-/* -------------------------------------- */
-
-
-/* ------------- Genéricos ------------- */
 
 .linha {
     display: flex;
@@ -212,10 +193,6 @@ coral - #ee7153
     width: 500px;
     width: 60%;
 }
-
-
-/* -------------------------------------- */
-
 
 /* ------------- SVGS ------------- */
 
@@ -267,12 +244,6 @@ coral - #ee7153
     background-position: center;
 }
 
-/* -------------------------------------- */
-
-.final {
-    height: 30px;
-    width: 100vw;
-}
 /* ------------------------------------------ */
 
 .titulo-principal{
@@ -302,14 +273,7 @@ coral - #ee7153
 
 /* ------------- BOTÕES ------------- */
 
-.botoes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.botoesAluno {
+.botoes, .botoesAluno {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -339,32 +303,18 @@ coral - #ee7153
     color: #14385C;
 }
 
-.botoes .icones {
+.botoes .icones, .botoesAluno .icones {
     width: 100px;
     height: 100px;
     margin-top: 15px;
 }
 
-.botoesAluno .icones {
-    width: 100px;
-    height: 100px;
-    margin-top: 15px;
-}
-
-.botoes .item {
+.botoes .item, .botoesAluno .item {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0px 30px 0px 30px;
-}
-
-.botoesAluno .item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 30px 20px 30px;
 }
 
 .manual {
@@ -376,16 +326,11 @@ coral - #ee7153
     height: 50px;
 }
 
-.botao:hover {
+.botao:hover, .botaoAnos:hover {
     cursor: pointer;
     background-color: rgb(228, 107, 8);
+    transform: scale(1.12);
 }
-
-.botaoAnos:hover {
-    cursor: pointer;
-    background-color: rgb(228, 107, 8);
-}
-
 
 /* ---------------------------------- */
 
@@ -416,20 +361,14 @@ coral - #ee7153
         flex-direction: column;
     }
 
-    
     .svg {
         width: 400px;
         height: 340px;
         background-size: cover;
     }
     
-    .texto {
+    .paragrafo {
         width: 40vw;
     }
     
 }
-
-
-    @media (min-width: 1024px) {
-    }
-

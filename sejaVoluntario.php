@@ -38,12 +38,8 @@
 
   <div class="corpo">
 
-    <div class="fotoEquipe"></div>
-
     <div class="seção">
-
       <h1 class="titulo-principal">SEJA VOLUNTÁRIO</h1>
-
       <p class="paragrafo">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci
         sagittis fermentum. Sed at imperdiet ante.
@@ -54,14 +50,14 @@
     <div class="linha"></div>
 
     <div class="seção">
-      <h1 class="subtitulo">Conheça um pouco de cada área do ADM!</h1>
+      <h2 class="subtitulo">Conheça um pouco de cada área do ADM!</h1>
     </div>
 
     <div class="seçãoRow">
 
       <div class="seção" id="recuo">
 
-        <h1 class="titulo-equipes">Comunicação e Marketing</h1>
+        <h2 class="titulo-equipes">Comunicação e Marketing</h1>
 
         <div class="svg" id="CMKT"></div>
         <div class="textoEquipes">
@@ -153,7 +149,7 @@
     <div class="linha"></div>
 
     <div class="seção">
-      <h1 class="subtitulo">O que esperamos de você</h1>
+      <h2 class="subtitulo">O que esperamos de você</h1>
 
       <p class="paragrafo">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci
@@ -166,7 +162,7 @@
     <div class="linha"></div>
 
     <div class="seção">
-      <h1 class="subtitulo">Processo seletivo</h1>
+      <h2 class="subtitulo">Processo seletivo</h1>
 
       <p class="paragrafo">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci
@@ -190,9 +186,8 @@
   <div class="linha"></div>
 
   <div class="seção">
-    <div class="tituloEspecial">
-      <h1>Editais de processos seletivos anteriores</h1>
-    </div>
+    <h2 class="subtitulo">Editais de processos seletivos anteriores</h1>
+    
     <p class="paragrafo">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci
       sagittis fermentum. Sed at imperdiet ante.
@@ -226,11 +221,9 @@
     </div>
   </div>
 
-  <div class="final"></div>
+  <?php include('common/footer.html'); ?>
 
   </div>
-
-  <?php include('common/footer.html'); ?>
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -14,55 +14,53 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
-  <div class="faixaDoLogo">
-    <div class="row">
-      <div class="logo-cursinho"></div>
+<header class="masthead" style="background-image:url('/img/Fotos/Alunos.jpg');">
+    <div class="overlay"></div>
+    <div class="container" id="background">
+        <div class="row">
+            <div class="col-md-10 col-lg-12 mx-auto">
+                <div class="site-heading" id="titulo">
+                    <h1>Cursinho Popular EACH-USP</h1> <!-- Título da Página --> 
+                    <span class="subheading">
+                        Transformando em <b>realidade</b> o sonho de entrar na <b>universidade</b>. <!-- Sub-Título da Página -->
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </header>
 
 <body>
 
   <div class="corpo">
 
-      <div class="fotoEquipe"></div>
-
       <div class="seção">
 
-      <div class="tituloPrincipal">
-        <h1>SEJA PROFESSOR</h1>
-      </div>
+        <h1 class="titulo-principal">SEJA PROFESSOR</h1>
 
-      <div class="texto">
-        <p>
+      <p class="paragrafo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci sagittis fermentum. Sed at imperdiet ante.
         </p>
       </div>
-      </div>
 
 
-      <div class="fineLineLaranja"></div>
+      <div class="linha"></div>
 
     <div class="seção">
-      <div class="tituloEspecial">
-        <h1>O que esperamos de você</h1>
-      </div>
-      <div class="texto">
-        <p>
+      <h2 class="subtitulo">O que esperamos de você</h1>
+      
+        <p class="paragrafo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci sagittis fermentum. Sed at imperdiet ante. Phasellus mollis turpis at semper sollicitudin. Curabitur luctus sem rhoncus quam faucibus feugiat. Praesent elit arcu, aliquet imperdiet arcu non, porta lacinia risus. Nunc non posuere lorem, non molestie est. Pellentesque a augue dolor. 
         </p>
-      </div>
+      
       </div>
 
-      <div class="fineLineLaranja"></div>
+      <div class="linha"></div>
 
     <div class="seção">
-      <div class="tituloEspecial">
-        <h1>Processo seletivo</h1>
-      </div>
-      <div class="texto">
-        <p>
+      <h2 class="subtitulo">Processo seletivo</h1>
+      
+      <p class="paragrafo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci sagittis fermentum. Sed at imperdiet ante. Phasellus mollis turpis at semper sollicitudin. Curabitur luctus sem rhoncus quam faucibus feugiat. Praesent elit arcu, aliquet imperdiet arcu non, porta lacinia risus. Nunc non posuere lorem, non molestie est. Pellentesque a augue dolor. 
         </p>
       </div>
@@ -79,19 +77,16 @@
       
       </div>
 
-      <div class="fineLineLaranja"></div>
+      <div class="linha"></div>
 
     <div class="seção">
-      <div class="tituloEspecial">
-        <h1>Editais de processos seletivos anteriores</h1>
-      </div>
-      <div class="texto">
-        <p>
+      <h2 class="subtitulo">Editais de processos seletivos anteriores</h1>
+      
+        <p class="paragrafo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet congue dolor. Nam varius ex sed orci sagittis fermentum. Sed at imperdiet ante.
         </p>
       </div>
       
-      </div>
 
 <div class="seçãoRow">
       <div class="botoes">
@@ -119,10 +114,9 @@
       </div>
     </div>
 
-      <div class="final"></div>
+      <?php include('common/footer.html'); ?>
 
 </div>
-
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
