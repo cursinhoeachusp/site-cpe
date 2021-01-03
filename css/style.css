@@ -137,3 +137,277 @@ coral - #ee7153
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+.corpo {
+    background-color: #14385C;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.triangulosFundo{
+    background-image: url('../img/triangulosFundo.png');
+    background-size: 300px;
+
+}
+
+/* ------------- Header ------------- */
+
+.faixaDoLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: white;
+}
+
+.logo-cursinho {
+    background-image: url('../img/logo.png');
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+/* -------------------------------------- */
+
+
+/* ------------- Genéricos ------------- */
+
+.linha {
+    display: flex;
+    margin: auto;
+    background-color: #FD7C11;
+    height: 3px;
+    width: 50vw;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.seçãoRow, .seção {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafo {    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+    color: white;
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.textoEquipes{    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 10px;
+    font-size: larger;
+    color: white;
+    width: 500px;
+    width: 60%;
+}
+
+
+/* -------------------------------------- */
+
+
+/* ------------- SVGS ------------- */
+
+.svg {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+
+#CMKT, #GP, #InovaTec, #JurFin, #PED, #Projetos{
+    background-image: url('../img/CMKT.png');
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#AreaDoAluno{
+    background-image: url('../img/areaDoAluno.png');
+    margin-top: 40px;
+    margin-bottom: 0px;
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* -------------------------------------- */
+
+.final {
+    height: 30px;
+    width: 100vw;
+}
+/* ------------------------------------------ */
+
+.titulo-principal{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 36px;
+    margin: 40px;
+}
+
+.subtitulo{
+    font-size: 23px;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+    padding: 12px;
+    border: 2.5px solid #FD7C11;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-equipes{
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* ------------- BOTÕES ------------- */
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoesAluno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    background-color: #FD7C11;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 24px;
+    height: 70px;
+    color: #14385C;
+}
+
+.botaoAnos {
+    background-color: #FD7C11;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 24px;
+    width: 300px;
+    height: 65px;
+    color: #14385C;
+}
+
+.botoes .icones {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.botoesAluno .icones {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.botoes .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+}
+
+.botoesAluno .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 20px 30px;
+}
+
+.manual {
+    width: 400px;
+}
+
+.manualAnos{
+    width: 100px;
+    height: 50px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: rgb(228, 107, 8);
+}
+
+.botaoAnos:hover {
+    cursor: pointer;
+    background-color: rgb(228, 107, 8);
+}
+
+
+/* ---------------------------------- */
+
+@media (min-width: 768px) {
+
+    .manual {
+        width: 400px;
+    }
+
+    .botoes .icones {
+        width: 150px;
+        height: 150px;
+    }
+
+    .botoes {
+        flex-direction: row;
+    }
+
+    #recuo {
+        margin-top: 60px;
+    }
+
+    .seçãoRow {
+        flex-direction: row;
+    }
+
+    .seção {
+        flex-direction: column;
+    }
+
+    
+    .svg {
+        width: 400px;
+        height: 340px;
+        background-size: cover;
+    }
+    
+    .texto {
+        width: 40vw;
+    }
+    
+}
+
+
+    @media (min-width: 1024px) {
+    }
+
