@@ -1,6 +1,6 @@
 <?php include('common/header.html'); ?>
 
-<header class="masthead" style="background-image:url('/img/Fotos/Equipe.jpg');">
+<header class="masthead" style="background-image:url('/img/Fotos/Equipe.jpeg');">
     <div class="overlay"></div>
     <div class="container" id="background">
         <div class="row">
