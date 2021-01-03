@@ -226,7 +226,6 @@ coral - #ee7153
 }
 
 #CMKT, #GP, #InovaTec, #JurFin, #PED, #Projetos{
-    background-image: url('../img/CMKT.png');
     margin-top: 40px;
     margin-bottom: 40px;
     height: 150px;
@@ -235,8 +234,31 @@ coral - #ee7153
     background-position: center;
 }
 
+#CMKT{
+    background-image: url('../img/FaçaParte/CMKT.png');
+}
+
+#GP{
+    background-image: url('../img/FaçaParte/GP.png');
+}
+
+#InovaTec{
+    background-image: url('../img/FaçaParte/InovaTec.png');
+}
+
+#JurFin{
+    background-image: url('../img/FaçaParte/JurFin.png');
+}
+
+#PED{
+    background-image: url('../img/FaçaParte/PED.png');
+}
+
+#Projetos{
+    background-image: url('../img/FaçaParte/Projetos.png');}
+
 #AreaDoAluno{
-    background-image: url('../img/areaDoAluno.png');
+    background-image: url('../img/FaçaParte/areaDoAluno.png');
     margin-top: 40px;
     margin-bottom: 0px;
     height: 150px;
