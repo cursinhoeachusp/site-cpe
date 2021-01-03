@@ -1,7 +1,8 @@
 
 .corpo {
     background-color: #14385C;
-    width: 100vw;  
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 .triangulosFundo{
@@ -32,7 +33,7 @@
 
 /* ------------- Genéricos ------------- */
 
-.fineLineLaranja {
+.linha {
     display: flex;
     margin: auto;
     background-color: #FD7C11;
@@ -42,21 +43,14 @@
     margin-top: 50px;
 }
 
-.seçãoRow {
+.seçãoRow, .seção {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.seção {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.texto {    
+.paragrafo {    
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -78,7 +72,6 @@
     color: white;
     width: 500px;
     width: 60%;
-    
 }
 
 
@@ -93,60 +86,8 @@
     background-size: cover;
 }
 
-
-
-#CMKT{
+#CMKT, #GP, #InovaTec, #JurFin, #PED, #Projetos{
     background-image: url('../img/CMKT.png');
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 150px;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#GP{
-    background-image: url('../img/GP.png');
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 150px;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#InovaTec{
-    background-image: url('../img/InovaTec.png');
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 150px;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#JurFin{
-    background-image: url('../img/JurFin.png');
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 150px;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#PED{
-    background-image: url('../img/PED.png');
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 150px;
-    width: 150px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#Projetos{
-    background-image: url('../img/Projetos.png');
     margin-top: 40px;
     margin-bottom: 40px;
     height: 150px;
@@ -165,7 +106,6 @@
     background-position: center;
 }
 
-
 /* -------------------------------------- */
 
 .final {
@@ -174,95 +114,31 @@
 }
 /* ------------------------------------------ */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-
-.tituloPrincipal h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 20px;
+.titulo-principal{
+    text-transform: uppercase;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 36px;
+    margin: 40px;
 }
 
-.tituloPrincipal {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.titulo h1 {
-    font-family: 'Open Sans', sans-serif;
+.subtitulo{
+    font-size: 23px;
     text-align: center;
-    color: white;
-    padding-top: 20px;
-    font-weight: bolder;
-    font-size: 30px;
-}
-
-.titulo {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.titulo h3 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 5px;
-    border-bottom: solid 5px #FD7C11;
-    font-weight: bolder;
-    font-size: 30px;
-}
-
-.tituloEspecial h1 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-    font-weight: bolder;
-    font-size: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-}
-
-.tituloEspecial {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    border-color: #FD7C11;
+    font-weight: bold;
+    margin: 50px;
+    padding: 12px;
+    border: 2.5px solid #FD7C11;
     border-radius: 15px;
-    border-width: 5px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-}
-
-.tituloEspecial {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 20px;
 }
 
-.tituloEspecial h3 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-    border-bottom: solid 5px #FD7C11;
+.titulo-equipes{
+    padding-top: 20px;
     font-weight: bolder;
     font-size: 30px;
-    border-top: 0px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 20px;
 }
+
 /* ------------- BOTÕES ------------- */
 
 .botoes {
@@ -407,3 +283,5 @@
 
     @media (min-width: 1024px) {
     }
+
+    
