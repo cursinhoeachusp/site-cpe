@@ -145,7 +145,8 @@ coral - #ee7153
 
 .corpo {
     background-color: #14385C;
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 .triangulosFundo{

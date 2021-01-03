@@ -114,12 +114,14 @@
       </div>
     </div>
 
-      <?php include('common/footer.html'); ?>
+      
 
 </div>
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
+
+<?php include('common/footer.html'); ?>
 
 </html>
