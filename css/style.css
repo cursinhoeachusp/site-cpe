@@ -141,8 +141,6 @@ coral - #ee7153
 
 /************************* CSS DAS PÁGINAS DE CONTEÚDO *************************/
 
-/* ------------- Genéricos ------------- */
-
 .corpo {
     background-color: #14385C;
     color: #FFFFFF;
@@ -176,7 +174,7 @@ coral - #ee7153
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    font-size: larger;
+    font-size: 20px;
     color: white;
     width: 90%;
     padding-top: 30px;
@@ -189,9 +187,8 @@ coral - #ee7153
     flex-direction: column;
     justify-content: center;
     margin: 30px 10px;
-    font-size: larger;
+    font-size: 20px;
     color: white;
-    width: 500px;
     width: 60%;
 }
 
@@ -269,7 +266,7 @@ coral - #ee7153
 .titulo-equipes{
     padding-top: 20px;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 23px;
 }
 
 /* ------------- BOTÕES ------------- */
@@ -331,6 +328,7 @@ coral - #ee7153
     cursor: pointer;
     background-color: rgb(228, 107, 8);
     transform: scale(1.12);
+    transition: transform .2s;
 }
 
 /* ---------------------------------- */
