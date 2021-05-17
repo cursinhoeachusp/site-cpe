@@ -1,0 +1,10 @@
+#containerBorder {
+    border: solid 3px purple;
+    background-image: url('../img/Fotos/Alunos.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#nos-apoie {
+    font-weight: bold;
+}
